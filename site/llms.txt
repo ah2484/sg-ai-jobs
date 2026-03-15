@@ -1,0 +1,22 @@
+# Singapore AI Jobs: AI Exposure Treemap
+
+## About
+Interactive visualization of AI automation exposure across ~560 Singapore occupations. Each occupation is scored 0-10 for AI exposure based on task-level analysis.
+
+## Methodology
+- Occupations sourced from MOM Occupational Wage Survey 2024 (~560 SSOC-coded occupations)
+- Task-level data from SkillsFuture Skills Framework (38 sectors, key tasks per role)
+- Each occupation scored by Claude Haiku 4.5 (temperature 0.2) via Anthropic Batch API
+- Dual-run averaging for score stability
+- Score scale: 0 (no AI impact) to 10 (fully automatable)
+
+## Data Schema
+Each occupation includes: title, SSOC code, major group, sector, monthly pay (median, P25, P75), exposure score (0-10), rationale, SkillsFuture tasks, technical skills, SkillsFuture funding status.
+
+## Scoring Scale
+- 0-1: Physical, manual labor (cleaner, refuse collector)
+- 2-3: Interpersonal + physical (hairdresser, bus driver)
+- 4-5: Mixed (nurse, teacher, property agent)
+- 6-7: Knowledge work (accountant, HR manager)
+- 8-9: Digital/cognitive (software engineer, translator)
+- 10: Routine digital (data entry clerk)

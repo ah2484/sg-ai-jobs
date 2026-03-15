@@ -1,0 +1,620 @@
+[
+  {
+    "title": "Software Developer",
+    "slug": "software-developer",
+    "ssoc_code": "25121",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "major_group": 2,
+    "sector": "ICT",
+    "pay_monthly": 8500,
+    "pay_annual": 102000,
+    "pay_p25": 6375,
+    "pay_p75": 11475,
+    "exposure": 9,
+    "exposure_rationale": "Score 9/10 based on task analysis.",
+    "tasks": [
+      "Design software systems",
+      "Write and test code",
+      "Debug applications",
+      "Review pull requests"
+    ],
+    "skills": [
+      "Python",
+      "Java",
+      "Cloud"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Data Entry Clerk",
+    "slug": "data-entry-clerk",
+    "ssoc_code": "41320",
+    "category": "clerical",
+    "category_label": "Clerical Support Workers",
+    "major_group": 4,
+    "sector": null,
+    "pay_monthly": 2200,
+    "pay_annual": 26400,
+    "pay_p25": null,
+    "pay_p75": null,
+    "exposure": 10,
+    "exposure_rationale": "Score 10/10 based on task analysis.",
+    "tasks": [
+      "Enter data into systems",
+      "Verify records"
+    ],
+    "skills": [],
+    "skillsfuture_funded": false,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Registered Nurse",
+    "slug": "registered-nurse",
+    "ssoc_code": "32210",
+    "category": "associate_professionals",
+    "category_label": "Associate Professionals & Technicians",
+    "major_group": 3,
+    "sector": "Healthcare",
+    "pay_monthly": 4200,
+    "pay_annual": 50400,
+    "pay_p25": null,
+    "pay_p75": null,
+    "exposure": 3,
+    "exposure_rationale": "Score 3/10 based on task analysis.",
+    "tasks": [
+      "Patient care",
+      "Administer medication",
+      "Monitor vitals",
+      "Update records"
+    ],
+    "skills": [
+      "Clinical assessment",
+      "Pharmacology"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Accountant",
+    "slug": "accountant",
+    "ssoc_code": "24111",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "major_group": 2,
+    "sector": "Finance",
+    "pay_monthly": 5800,
+    "pay_annual": 69600,
+    "pay_p25": null,
+    "pay_p75": null,
+    "exposure": 7,
+    "exposure_rationale": "Score 7/10 based on task analysis.",
+    "tasks": [
+      "Prepare financial statements",
+      "Tax compliance",
+      "Audit accounts"
+    ],
+    "skills": [
+      "IFRS",
+      "Taxation"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Cleaner",
+    "slug": "cleaner",
+    "ssoc_code": "91120",
+    "category": "elementary",
+    "category_label": "Elementary Occupations",
+    "major_group": 9,
+    "sector": null,
+    "pay_monthly": 1500,
+    "pay_annual": 18000,
+    "pay_p25": 1125,
+    "pay_p75": 2025,
+    "exposure": 1,
+    "exposure_rationale": "Score 1/10 based on task analysis.",
+    "tasks": [
+      "Clean premises",
+      "Maintain supplies"
+    ],
+    "skills": [],
+    "skillsfuture_funded": false,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Bus Driver",
+    "slug": "bus-driver",
+    "ssoc_code": "83210",
+    "category": "plant_machine",
+    "category_label": "Plant & Machine Operators & Assemblers",
+    "major_group": 8,
+    "sector": "Transport",
+    "pay_monthly": 2800,
+    "pay_annual": 33600,
+    "pay_p25": 2100,
+    "pay_p75": 3780,
+    "exposure": 2,
+    "exposure_rationale": "Score 2/10 based on task analysis.",
+    "tasks": [
+      "Drive buses",
+      "Collect fares"
+    ],
+    "skills": [],
+    "skillsfuture_funded": false,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Teacher (Secondary)",
+    "slug": "teacher-secondary",
+    "ssoc_code": "23302",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "major_group": 2,
+    "sector": "Education",
+    "pay_monthly": 5200,
+    "pay_annual": 62400,
+    "pay_p25": 3900,
+    "pay_p75": 7020,
+    "exposure": 4,
+    "exposure_rationale": "Score 4/10 based on task analysis.",
+    "tasks": [
+      "Prepare lessons",
+      "Teach students",
+      "Grade assignments",
+      "Counsel students"
+    ],
+    "skills": [
+      "Pedagogy",
+      "Curriculum design"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Marketing Manager",
+    "slug": "marketing-manager",
+    "ssoc_code": "12211",
+    "category": "managers",
+    "category_label": "Managers",
+    "major_group": 1,
+    "sector": "Marketing",
+    "pay_monthly": 8200,
+    "pay_annual": 98400,
+    "pay_p25": null,
+    "pay_p75": null,
+    "exposure": 7,
+    "exposure_rationale": "Score 7/10 based on task analysis.",
+    "tasks": [
+      "Develop marketing strategy",
+      "Manage campaigns",
+      "Analyze metrics"
+    ],
+    "skills": [
+      "Digital marketing",
+      "Analytics"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Graphic Designer",
+    "slug": "graphic-designer",
+    "ssoc_code": "21661",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "major_group": 2,
+    "sector": "Creative",
+    "pay_monthly": 4500,
+    "pay_annual": 54000,
+    "pay_p25": 3375,
+    "pay_p75": 6075,
+    "exposure": 8,
+    "exposure_rationale": "Score 8/10 based on task analysis.",
+    "tasks": [
+      "Create visual content",
+      "Design layouts",
+      "Brand identity work"
+    ],
+    "skills": [
+      "Adobe Suite",
+      "UI/UX"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Security Guard",
+    "slug": "security-guard",
+    "ssoc_code": "54190",
+    "category": "service_sales",
+    "category_label": "Service & Sales Workers",
+    "major_group": 5,
+    "sector": null,
+    "pay_monthly": 2000,
+    "pay_annual": 24000,
+    "pay_p25": null,
+    "pay_p75": null,
+    "exposure": 1,
+    "exposure_rationale": "Score 1/10 based on task analysis.",
+    "tasks": [
+      "Patrol premises",
+      "Monitor CCTV"
+    ],
+    "skills": [],
+    "skillsfuture_funded": false,
+    "ep_spass_share": null
+  },
+  {
+    "title": "HR Manager",
+    "slug": "hr-manager",
+    "ssoc_code": "12121",
+    "category": "managers",
+    "category_label": "Managers",
+    "major_group": 1,
+    "sector": "HR",
+    "pay_monthly": 7500,
+    "pay_annual": 90000,
+    "pay_p25": null,
+    "pay_p75": null,
+    "exposure": 6,
+    "exposure_rationale": "Score 6/10 based on task analysis.",
+    "tasks": [
+      "Recruitment",
+      "Employee relations",
+      "Policy development"
+    ],
+    "skills": [
+      "HRIS",
+      "Employment law"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Chef",
+    "slug": "chef",
+    "ssoc_code": "51201",
+    "category": "service_sales",
+    "category_label": "Service & Sales Workers",
+    "major_group": 5,
+    "sector": "F&B",
+    "pay_monthly": 3500,
+    "pay_annual": 42000,
+    "pay_p25": 2625,
+    "pay_p75": 4725,
+    "exposure": 2,
+    "exposure_rationale": "Score 2/10 based on task analysis.",
+    "tasks": [
+      "Prepare meals",
+      "Menu planning",
+      "Kitchen management"
+    ],
+    "skills": [
+      "Food safety"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Pharmacist",
+    "slug": "pharmacist",
+    "ssoc_code": "22611",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "major_group": 2,
+    "sector": "Healthcare",
+    "pay_monthly": 6500,
+    "pay_annual": 78000,
+    "pay_p25": null,
+    "pay_p75": null,
+    "exposure": 5,
+    "exposure_rationale": "Score 5/10 based on task analysis.",
+    "tasks": [
+      "Dispense medication",
+      "Counsel patients",
+      "Review prescriptions"
+    ],
+    "skills": [
+      "Pharmacology"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Property Agent",
+    "slug": "property-agent",
+    "ssoc_code": "33240",
+    "category": "associate_professionals",
+    "category_label": "Associate Professionals & Technicians",
+    "major_group": 3,
+    "sector": null,
+    "pay_monthly": 4800,
+    "pay_annual": 57600,
+    "pay_p25": null,
+    "pay_p75": null,
+    "exposure": 5,
+    "exposure_rationale": "Score 5/10 based on task analysis.",
+    "tasks": [
+      "Show properties",
+      "Negotiate deals",
+      "Market listings"
+    ],
+    "skills": [],
+    "skillsfuture_funded": false,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Translator",
+    "slug": "translator",
+    "ssoc_code": "26431",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "major_group": 2,
+    "sector": null,
+    "pay_monthly": 4000,
+    "pay_annual": 48000,
+    "pay_p25": 3000,
+    "pay_p75": 5400,
+    "exposure": 9,
+    "exposure_rationale": "Score 9/10 based on task analysis.",
+    "tasks": [
+      "Translate documents",
+      "Interpret conversations"
+    ],
+    "skills": [
+      "Bilingual fluency"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Electrician",
+    "slug": "electrician",
+    "ssoc_code": "74110",
+    "category": "craft",
+    "category_label": "Craft & Related Trades Workers",
+    "major_group": 7,
+    "sector": "Engineering",
+    "pay_monthly": 3200,
+    "pay_annual": 38400,
+    "pay_p25": 2400,
+    "pay_p75": 4320,
+    "exposure": 2,
+    "exposure_rationale": "Score 2/10 based on task analysis.",
+    "tasks": [
+      "Install wiring",
+      "Maintain circuits",
+      "Troubleshoot faults"
+    ],
+    "skills": [
+      "Electrical systems"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Financial Analyst",
+    "slug": "financial-analyst",
+    "ssoc_code": "24120",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "major_group": 2,
+    "sector": "Finance",
+    "pay_monthly": 7000,
+    "pay_annual": 84000,
+    "pay_p25": null,
+    "pay_p75": null,
+    "exposure": 8,
+    "exposure_rationale": "Score 8/10 based on task analysis.",
+    "tasks": [
+      "Financial modeling",
+      "Investment analysis",
+      "Report writing"
+    ],
+    "skills": [
+      "Excel",
+      "Bloomberg"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Sales Manager",
+    "slug": "sales-manager",
+    "ssoc_code": "12210",
+    "category": "managers",
+    "category_label": "Managers",
+    "major_group": 1,
+    "sector": null,
+    "pay_monthly": 7800,
+    "pay_annual": 93600,
+    "pay_p25": 5850,
+    "pay_p75": 10530,
+    "exposure": 6,
+    "exposure_rationale": "Score 6/10 based on task analysis.",
+    "tasks": [
+      "Set sales targets",
+      "Manage team",
+      "Client relationships"
+    ],
+    "skills": [],
+    "skillsfuture_funded": false,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Hairdresser",
+    "slug": "hairdresser",
+    "ssoc_code": "51411",
+    "category": "service_sales",
+    "category_label": "Service & Sales Workers",
+    "major_group": 5,
+    "sector": null,
+    "pay_monthly": 2500,
+    "pay_annual": 30000,
+    "pay_p25": 1875,
+    "pay_p75": 3375,
+    "exposure": 2,
+    "exposure_rationale": "Score 2/10 based on task analysis.",
+    "tasks": [
+      "Cut hair",
+      "Style hair",
+      "Consult clients"
+    ],
+    "skills": [],
+    "skillsfuture_funded": false,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Civil Engineer",
+    "slug": "civil-engineer",
+    "ssoc_code": "21421",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "major_group": 2,
+    "sector": "Engineering",
+    "pay_monthly": 6200,
+    "pay_annual": 74400,
+    "pay_p25": null,
+    "pay_p75": null,
+    "exposure": 5,
+    "exposure_rationale": "Score 5/10 based on task analysis.",
+    "tasks": [
+      "Design structures",
+      "Site supervision",
+      "Technical drawings"
+    ],
+    "skills": [
+      "AutoCAD",
+      "Structural analysis"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Lawyer",
+    "slug": "lawyer",
+    "ssoc_code": "26110",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "major_group": 2,
+    "sector": "Legal",
+    "pay_monthly": 9500,
+    "pay_annual": 114000,
+    "pay_p25": 7125,
+    "pay_p75": 12825,
+    "exposure": 6,
+    "exposure_rationale": "Score 6/10 based on task analysis.",
+    "tasks": [
+      "Legal research",
+      "Draft contracts",
+      "Client advisory",
+      "Court representation"
+    ],
+    "skills": [
+      "Legal research",
+      "Contract law"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Waiter",
+    "slug": "waiter",
+    "ssoc_code": "51310",
+    "category": "service_sales",
+    "category_label": "Service & Sales Workers",
+    "major_group": 5,
+    "sector": "F&B",
+    "pay_monthly": 2200,
+    "pay_annual": 26400,
+    "pay_p25": 1650,
+    "pay_p75": 2970,
+    "exposure": 2,
+    "exposure_rationale": "Score 2/10 based on task analysis.",
+    "tasks": [
+      "Take orders",
+      "Serve food",
+      "Customer service"
+    ],
+    "skills": [],
+    "skillsfuture_funded": false,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Data Scientist",
+    "slug": "data-scientist",
+    "ssoc_code": "25220",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "major_group": 2,
+    "sector": "ICT",
+    "pay_monthly": 9000,
+    "pay_annual": 108000,
+    "pay_p25": 6750,
+    "pay_p75": 12150,
+    "exposure": 8,
+    "exposure_rationale": "Score 8/10 based on task analysis.",
+    "tasks": [
+      "Build ML models",
+      "Analyze data",
+      "Statistical analysis"
+    ],
+    "skills": [
+      "Python",
+      "ML",
+      "Statistics"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Refuse Collector",
+    "slug": "refuse-collector",
+    "ssoc_code": "96130",
+    "category": "elementary",
+    "category_label": "Elementary Occupations",
+    "major_group": 9,
+    "sector": null,
+    "pay_monthly": 1800,
+    "pay_annual": 21600,
+    "pay_p25": null,
+    "pay_p75": null,
+    "exposure": 0,
+    "exposure_rationale": "Score 0/10 based on task analysis.",
+    "tasks": [
+      "Collect waste",
+      "Operate trucks"
+    ],
+    "skills": [],
+    "skillsfuture_funded": false,
+    "ep_spass_share": null
+  },
+  {
+    "title": "Quantity Surveyor",
+    "slug": "quantity-surveyor",
+    "ssoc_code": "21491",
+    "category": "professionals",
+    "category_label": "Professionals",
+    "major_group": 2,
+    "sector": "Construction",
+    "pay_monthly": 5500,
+    "pay_annual": 66000,
+    "pay_p25": 4125,
+    "pay_p75": 7425,
+    "exposure": 6,
+    "exposure_rationale": "Score 6/10 based on task analysis.",
+    "tasks": [
+      "Cost estimation",
+      "Contract admin",
+      "Tender evaluation"
+    ],
+    "skills": [
+      "Cost management"
+    ],
+    "skillsfuture_funded": true,
+    "ep_spass_share": null
+  }
+]

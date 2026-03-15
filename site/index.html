@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Singapore AI Jobs: AI Exposure Treemap</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, sans-serif; background: #f5f5f5; color: #1a1a2e; overflow: hidden; height: 100vh; }
+
+/* Header */
+.header { background: #1a1a2e; color: #fff; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; z-index: 10; }
+.header h1 { font-size: 18px; font-weight: 600; }
+.header .subtitle { font-size: 13px; color: #a0a0b8; margin-top: 2px; }
+.header-controls { display: flex; gap: 8px; align-items: center; }
+.btn { padding: 6px 14px; border: 1px solid rgba(255,255,255,0.25); background: transparent; color: #fff; border-radius: 6px; cursor: pointer; font-size: 12px; transition: all 0.15s; }
+.btn:hover { background: rgba(255,255,255,0.1); }
+.btn.active { background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.5); }
+.btn-method { padding: 6px 14px; border: 1px solid #ddd; background: #fff; color: #333; border-radius: 6px; cursor: pointer; font-size: 12px; }
+
+/* Layout */
+.main { display: flex; height: calc(100vh - 52px); }
+.sidebar { width: 240px; background: #fff; border-right: 1px solid #e0e0e0; padding: 16px; overflow-y: auto; flex-shrink: 0; }
+.sidebar h3 { font-size: 13px; font-weight: 600; text-transform: uppercase; color: #666; margin-bottom: 8px; letter-spacing: 0.5px; }
+.sidebar label { display: flex; align-items: center; gap: 6px; font-size: 13px; padding: 3px 0; cursor: pointer; }
+.sidebar select, .sidebar input[type="text"] { width: 100%; padding: 6px 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; margin-bottom: 12px; }
+.sidebar .section { margin-bottom: 16px; }
+
+/* Canvas area */
+.canvas-wrap { flex: 1; position: relative; overflow: hidden; background: #fff; }
+canvas { display: block; }
+
+/* Tooltip */
+.tooltip { position: fixed; pointer-events: none; background: rgba(26,26,46,0.95); color: #fff; padding: 10px 14px; border-radius: 8px; font-size: 13px; line-height: 1.5; max-width: 320px; z-index: 100; display: none; box-shadow: 0 4px 16px rgba(0,0,0,0.3); }
+.tooltip .tt-title { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+.tooltip .tt-row { display: flex; justify-content: space-between; gap: 16px; }
+.tooltip .tt-label { color: #a0a0b8; }
+.tooltip .tt-badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; }
+
+/* Detail panel */
+.detail-panel { position: absolute; top: 0; right: 0; width: 380px; height: 100%; background: #fff; border-left: 1px solid #e0e0e0; overflow-y: auto; z-index: 20; transform: translateX(100%); transition: transform 0.25s ease; padding: 20px; box-shadow: -4px 0 16px rgba(0,0,0,0.08); }
+.detail-panel.open { transform: translateX(0); }
+.detail-panel .close-btn { position: absolute; top: 12px; right: 12px; width: 28px; height: 28px; border: none; background: #f0f0f0; border-radius: 50%; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; }
+.detail-panel h2 { font-size: 18px; margin-bottom: 4px; padding-right: 32px; }
+.detail-panel .dp-ssoc { font-size: 13px; color: #888; margin-bottom: 12px; }
+.detail-panel .dp-score-bar { height: 8px; border-radius: 4px; background: #eee; margin-bottom: 16px; position: relative; }
+.detail-panel .dp-score-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
+.detail-panel .dp-section { margin-bottom: 16px; }
+.detail-panel .dp-section h4 { font-size: 12px; font-weight: 600; text-transform: uppercase; color: #888; margin-bottom: 6px; letter-spacing: 0.5px; }
+.detail-panel .dp-section p { font-size: 14px; line-height: 1.6; }
+.detail-panel .dp-section ul { padding-left: 18px; font-size: 13px; line-height: 1.6; }
+.detail-panel .dp-section li { margin-bottom: 2px; }
+.dp-badge { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+.dp-sf-badge { background: #e8f5e9; color: #2e7d32; }
+
+/* Modal */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 200; display: none; align-items: center; justify-content: center; }
+.modal-overlay.open { display: flex; }
+.modal { background: #fff; border-radius: 12px; padding: 28px; max-width: 560px; width: 90%; max-height: 80vh; overflow-y: auto; box-shadow: 0 8px 32px rgba(0,0,0,0.2); }
+.modal h2 { margin-bottom: 16px; }
+.modal h4 { margin-top: 16px; margin-bottom: 6px; color: #555; font-size: 13px; text-transform: uppercase; }
+.modal p, .modal li { font-size: 14px; line-height: 1.7; }
+.modal ul { padding-left: 20px; }
+.modal .close-modal { float: right; border: none; background: #f0f0f0; border-radius: 50%; width: 28px; height: 28px; cursor: pointer; font-size: 16px; }
+
+/* Column chart view */
+.chart-view { display: none; flex: 1; padding: 20px; overflow: auto; background: #fff; }
+.chart-view.active { display: block; }
+.canvas-wrap.hidden { display: none; }
+
+/* Legend */
+.legend { position: absolute; bottom: 12px; left: 12px; background: rgba(255,255,255,0.95); border: 1px solid #e0e0e0; border-radius: 8px; padding: 8px 12px; font-size: 12px; z-index: 5; display: flex; align-items: center; gap: 8px; }
+.legend-gradient { width: 120px; height: 12px; border-radius: 3px; }
+.legend-labels { display: flex; justify-content: space-between; width: 120px; font-size: 10px; color: #888; }
+
+/* Loading */
+.loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 16px; color: #888; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Singapore AI Jobs: AI Exposure Treemap</h1>
+    <div class="subtitle">How exposed is your job to AI automation?</div>
+  </div>
+  <div class="header-controls">
+    <button class="btn active" data-size="equal">Equal</button>
+    <button class="btn" data-size="pay">By Pay</button>
+    <button class="btn" data-size="wagebill">By Wage Bill</button>
+    <span style="width:1px;height:20px;background:rgba(255,255,255,0.2);margin:0 4px"></span>
+    <button class="btn" data-view="treemap" id="btn-treemap" style="display:none">Treemap</button>
+    <button class="btn" data-view="chart" id="btn-chart">Chart View</button>
+    <span style="width:1px;height:20px;background:rgba(255,255,255,0.2);margin:0 4px"></span>
+    <button class="btn" id="btn-methodology">How we scored</button>
+  </div>
+</div>
+
+<div class="main">
+  <div class="sidebar">
+    <div class="section">
+      <h3>Search</h3>
+      <input type="text" id="search" placeholder="Search occupations...">
+    </div>
+    <div class="section">
+      <h3>Exposure Tier</h3>
+      <label><input type="checkbox" class="tier-filter" value="low" checked> Low (0-3)</label>
+      <label><input type="checkbox" class="tier-filter" value="mid" checked> Medium (4-6)</label>
+      <label><input type="checkbox" class="tier-filter" value="high" checked> High (7-10)</label>
+    </div>
+    <div class="section">
+      <h3>Sector</h3>
+      <select id="sector-filter"><option value="">All Sectors</option></select>
+    </div>
+    <div class="section">
+      <h3>Stats</h3>
+      <div id="stats" style="font-size:13px;line-height:1.7;color:#555;"></div>
+    </div>
+  </div>
+
+  <div class="canvas-wrap" id="canvas-wrap">
+    <canvas id="treemap"></canvas>
+    <div class="loading" id="loading">Loading data...</div>
+    <div class="legend" id="legend" style="display:none;">
+      <span>Low</span>
+      <div>
+        <div class="legend-gradient" id="legend-gradient"></div>
+        <div class="legend-labels"><span>0</span><span>5</span><span>10</span></div>
+      </div>
+      <span>High</span>
+      <span style="margin-left:8px;color:#2e7d32;">● = SkillsFuture</span>
+    </div>
+    <div class="detail-panel" id="detail-panel">
+      <button class="close-btn" id="close-detail">×</button>
+      <div id="detail-content"></div>
+    </div>
+  </div>
+
+  <div class="chart-view" id="chart-view"></div>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<div class="modal-overlay" id="methodology-modal">
+  <div class="modal">
+    <button class="close-modal" id="close-modal">×</button>
+    <h2>How We Scored</h2>
+    <h4>Data Sources</h4>
+    <ul>
+      <li><strong>MOM Occupational Wage Survey 2024</strong> — ~560 occupations with SSOC codes, gross monthly wage percentiles</li>
+      <li><strong>SkillsFuture Skills Framework</strong> — Task-level data per role across 38 sectors, including key tasks and technical skills</li>
+    </ul>
+    <h4>Scoring Model</h4>
+    <p>Each occupation was scored by <strong>Claude Haiku 4.5</strong> (temperature 0.2) via the Anthropic Batch API. Two independent runs were averaged for stability.</p>
+    <h4>Scale Anchors (0-10)</h4>
+    <ul>
+      <li><strong>0-1:</strong> Physical, manual labor — cleaner, refuse collector</li>
+      <li><strong>2-3:</strong> Interpersonal + physical — hairdresser, bus driver</li>
+      <li><strong>4-5:</strong> Mixed — nurse, teacher, property agent</li>
+      <li><strong>6-7:</strong> Knowledge work — accountant, HR manager</li>
+      <li><strong>8-9:</strong> Digital/cognitive — software engineer, translator</li>
+      <li><strong>10:</strong> Routine digital — data entry clerk</li>
+    </ul>
+    <h4>Key Differentiator</h4>
+    <p>Unlike title-only scoring, we provide the LLM with <strong>task-level SkillsFuture data</strong> for each occupation, enabling more granular and accurate assessment of which specific tasks are automatable.</p>
+    <p style="margin-top:12px;font-size:13px;color:#888;"><a href="methodology.json" target="_blank">View raw methodology data →</a></p>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// Config & State
+// ============================================================
+const COLOR_STOPS = [
+  { pos: 0,  r: 90,  g: 138, b: 60  }, // #5a8a3c olive green
+  { pos: 5,  r: 212, g: 184, b: 60  }, // #d4b83c yellow
+  { pos: 10, r: 196, g: 78,  b: 43  }, // #c44e2b red-orange
+];
+
+const MAJOR_GROUP_ORDER = [2, 1, 3, 4, 5, 7, 8, 9, 6]; // professionals first
+
+let allData = [];
+let filteredData = [];
+let tileRects = []; // {x, y, w, h, occ, group?}
+let groupRects = [];
+let sizeMode = 'equal';
+let currentView = 'treemap';
+let hoveredTile = null;
+let selectedTile = null;
+
+// ============================================================
+// Color
+// ============================================================
+function exposureColor(score) {
+  let lower, upper;
+  for (let i = 0; i < COLOR_STOPS.length - 1; i++) {
+    if (score <= COLOR_STOPS[i + 1].pos) {
+      lower = COLOR_STOPS[i];
+      upper = COLOR_STOPS[i + 1];
+      break;
+    }
+  }
+  if (!lower) { lower = COLOR_STOPS[COLOR_STOPS.length - 2]; upper = COLOR_STOPS[COLOR_STOPS.length - 1]; }
+  const t = (score - lower.pos) / (upper.pos - lower.pos);
+  const r = Math.round(lower.r + t * (upper.r - lower.r));
+  const g = Math.round(lower.g + t * (upper.g - lower.g));
+  const b = Math.round(lower.b + t * (upper.b - lower.b));
+  return `rgb(${r},${g},${b})`;
+}
+
+function exposureColorHex(score) {
+  const c = exposureColor(score);
+  return c;
+}
+
+// ============================================================
+// Squarify Treemap
+// ============================================================
+function squarify(items, rect) {
+  if (items.length === 0) return [];
+  const totalArea = items.reduce((s, it) => s + it.value, 0);
+  if (totalArea <= 0) return [];
+
+  const rects = [];
+  const scaled = items.map(it => ({
+    ...it,
+    area: (it.value / totalArea) * rect.w * rect.h
+  }));
+
+  layoutStrip(scaled, { x: rect.x, y: rect.y, w: rect.w, h: rect.h }, rects);
+  return rects;
+}
+
+function layoutStrip(items, rect, result) {
+  if (items.length === 0) return;
+  if (items.length === 1) {
+    result.push({ ...items[0], x: rect.x, y: rect.y, w: rect.w, h: rect.h });
+    return;
+  }
+
+  const isWide = rect.w >= rect.h;
+  let strip = [items[0]];
+  let stripArea = items[0].area;
+  let bestWorst = worstRatio(strip, stripArea, isWide ? rect.h : rect.w);
+
+  for (let i = 1; i < items.length; i++) {
+    const newStrip = [...strip, items[i]];
+    const newStripArea = stripArea + items[i].area;
+    const newWorst = worstRatio(newStrip, newStripArea, isWide ? rect.h : rect.w);
+
+    if (newWorst <= bestWorst) {
+      strip = newStrip;
+      stripArea = newStripArea;
+      bestWorst = newWorst;
+    } else {
+      break;
+    }
+  }
+
+  // Layout the strip
+  const side = isWide ? rect.h : rect.w;
+  const stripLength = stripArea / side;
+  let pos = 0;
+
+  for (const item of strip) {
+    const itemLen = item.area / stripLength;
+    if (isWide) {
+      result.push({ ...item, x: rect.x, y: rect.y + pos, w: stripLength, h: itemLen });
+    } else {
+      result.push({ ...item, x: rect.x + pos, y: rect.y, w: itemLen, h: stripLength });
+    }
+    pos += itemLen;
+  }
+
+  // Recurse with remaining items
+  const remaining = items.slice(strip.length);
+  if (remaining.length > 0) {
+    let newRect;
+    if (isWide) {
+      newRect = { x: rect.x + stripLength, y: rect.y, w: rect.w - stripLength, h: rect.h };
+    } else {
+      newRect = { x: rect.x, y: rect.y + stripLength, w: rect.w, h: rect.h - stripLength };
+    }
+    layoutStrip(remaining, newRect, result);
+  }
+}
+
+function worstRatio(strip, totalArea, side) {
+  const stripLen = totalArea / side;
+  let worst = 0;
+  for (const item of strip) {
+    const itemLen = item.area / stripLen;
+    const ratio = Math.max(stripLen / itemLen, itemLen / stripLen);
+    worst = Math.max(worst, ratio);
+  }
+  return worst;
+}
+
+// ============================================================
+// Data & Filtering
+// ============================================================
+function getValueForOcc(occ) {
+  if (sizeMode === 'pay') return Math.max(occ.pay_monthly, 500);
+  if (sizeMode === 'wagebill') return Math.max(occ.pay_annual, 6000);
+  return 1;
+}
+
+function applyFilters() {
+  const search = document.getElementById('search').value.toLowerCase().trim();
+  const sector = document.getElementById('sector-filter').value;
+  const tiers = {
+    low: document.querySelector('.tier-filter[value="low"]').checked,
+    mid: document.querySelector('.tier-filter[value="mid"]').checked,
+    high: document.querySelector('.tier-filter[value="high"]').checked,
+  };
+
+  filteredData = allData.filter(occ => {
+    // Search
+    if (search && !occ.title.toLowerCase().includes(search) && !occ.ssoc_code.includes(search)) return false;
+    // Sector
+    if (sector && occ.sector !== sector) return false;
+    // Tier
+    const e = occ.exposure;
+    if (e <= 3 && !tiers.low) return false;
+    if (e >= 4 && e <= 6 && !tiers.mid) return false;
+    if (e >= 7 && !tiers.high) return false;
+    return true;
+  });
+
+  updateStats();
+}
+
+function updateStats() {
+  const el = document.getElementById('stats');
+  if (filteredData.length === 0) { el.innerHTML = 'No matching occupations'; return; }
+  const exposures = filteredData.map(o => o.exposure);
+  const mean = (exposures.reduce((a, b) => a + b, 0) / exposures.length).toFixed(1);
+  const pays = filteredData.map(o => o.pay_monthly);
+  const avgPay = Math.round(pays.reduce((a, b) => a + b, 0) / pays.length);
+  const sfCount = filteredData.filter(o => o.skillsfuture_funded).length;
+  el.innerHTML = `
+    <div><strong>${filteredData.length}</strong> occupations</div>
+    <div>Avg exposure: <strong>${mean}</strong></div>
+    <div>Avg pay: <strong>SGD ${avgPay.toLocaleString()}</strong></div>
+    <div>SkillsFuture: <strong>${sfCount}</strong></div>
+  `;
+}
+
+// ============================================================
+// Rendering
+// ============================================================
+function render() {
+  const canvas = document.getElementById('treemap');
+  const wrap = document.getElementById('canvas-wrap');
+  const dpr = window.devicePixelRatio || 1;
+  const w = wrap.clientWidth;
+  const h = wrap.clientHeight;
+
+  canvas.width = w * dpr;
+  canvas.height = h * dpr;
+  canvas.style.width = w + 'px';
+  canvas.style.height = h + 'px';
+
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, w, h);
+
+  if (filteredData.length === 0) {
+    ctx.fillStyle = '#888';
+    ctx.font = '16px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillText('No occupations match your filters', w / 2, h / 2);
+    tileRects = [];
+    groupRects = [];
+    return;
+  }
+
+  // Group by major_group
+  const groups = {};
+  for (const occ of filteredData) {
+    const mg = occ.major_group;
+    if (!groups[mg]) groups[mg] = { items: [], totalValue: 0, label: occ.category_label, major_group: mg };
+    const val = getValueForOcc(occ);
+    groups[mg].items.push(occ);
+    groups[mg].totalValue += val;
+  }
+
+  const groupList = MAJOR_GROUP_ORDER
+    .filter(mg => groups[mg])
+    .map(mg => ({ ...groups[mg], value: groups[mg].totalValue }));
+
+  const PAD = 4;
+  const HEADER = 22;
+
+  // Layout groups
+  const groupLayout = squarify(groupList, { x: PAD, y: PAD, w: w - PAD * 2, h: h - PAD * 2 });
+
+  tileRects = [];
+  groupRects = [];
+
+  for (const gl of groupLayout) {
+    const gx = gl.x + 1;
+    const gy = gl.y + 1;
+    const gw = gl.w - 2;
+    const gh = gl.h - 2;
+
+    groupRects.push({ x: gx, y: gy, w: gw, h: gh, label: gl.label, major_group: gl.major_group });
+
+    // Draw group background
+    ctx.fillStyle = '#f8f8f8';
+    ctx.fillRect(gx, gy, gw, gh);
+
+    // Group header
+    if (gh > HEADER + 20 && gw > 60) {
+      ctx.fillStyle = '#555';
+      ctx.font = 'bold 11px system-ui';
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'middle';
+      const headerText = gl.label;
+      const maxTextW = gw - 8;
+      let displayText = headerText;
+      if (ctx.measureText(displayText).width > maxTextW) {
+        while (displayText.length > 3 && ctx.measureText(displayText + '…').width > maxTextW) {
+          displayText = displayText.slice(0, -1);
+        }
+        displayText += '…';
+      }
+      ctx.fillText(displayText, gx + 4, gy + HEADER / 2);
+    }
+
+    // Layout occupation tiles within group
+    const innerRect = {
+      x: gx + 1,
+      y: gy + (gh > HEADER + 20 && gw > 60 ? HEADER : 1),
+      w: gw - 2,
+      h: gh - (gh > HEADER + 20 && gw > 60 ? HEADER + 1 : 2)
+    };
+
+    const occItems = gl.items
+      .sort((a, b) => b.exposure - a.exposure)
+      .map(occ => ({ occ, value: getValueForOcc(occ) }));
+
+    const occLayout = squarify(occItems, innerRect);
+
+    for (const ol of occLayout) {
+      const tx = ol.x + 0.5;
+      const ty = ol.y + 0.5;
+      const tw = ol.w - 1;
+      const th = ol.h - 1;
+
+      if (tw < 1 || th < 1) continue;
+
+      const occ = ol.occ;
+      const isHovered = hoveredTile && hoveredTile.slug === occ.slug;
+      const isSelected = selectedTile && selectedTile.slug === occ.slug;
+
+      // Tile background
+      ctx.fillStyle = exposureColor(occ.exposure);
+      ctx.globalAlpha = isHovered ? 0.85 : (isSelected ? 0.9 : 1);
+      ctx.fillRect(tx, ty, tw, th);
+      ctx.globalAlpha = 1;
+
+      // Border
+      if (isHovered || isSelected) {
+        ctx.strokeStyle = '#fff';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(tx, ty, tw, th);
+      }
+
+      // SkillsFuture badge (green dot)
+      if (occ.skillsfuture_funded && tw > 20 && th > 20) {
+        ctx.fillStyle = '#2e7d32';
+        ctx.beginPath();
+        ctx.arc(tx + tw - 6, ty + 6, 3, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      // Title text
+      if (tw > 30 && th > 16) {
+        ctx.fillStyle = occ.exposure >= 5 ? '#fff' : 'rgba(0,0,0,0.8)';
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'top';
+
+        const fontSize = tw > 100 && th > 40 ? 12 : (tw > 60 && th > 24 ? 10 : 9);
+        ctx.font = `${fontSize}px system-ui`;
+
+        const maxW = tw - 6;
+        let text = occ.title;
+        if (ctx.measureText(text).width > maxW) {
+          while (text.length > 3 && ctx.measureText(text + '…').width > maxW) {
+            text = text.slice(0, -1);
+          }
+          text += '…';
+        }
+        ctx.fillText(text, tx + 3, ty + 3);
+
+        // Score number
+        if (th > 32 && tw > 40) {
+          ctx.font = `bold ${fontSize}px system-ui`;
+          ctx.fillText(occ.exposure.toString(), tx + 3, ty + 3 + fontSize + 2);
+        }
+      }
+
+      tileRects.push({ x: tx, y: ty, w: tw, h: th, occ });
+    }
+  }
+}
+
+// ============================================================
+// Chart View (Exposure vs Pay scatter)
+// ============================================================
+function renderChart() {
+  const container = document.getElementById('chart-view');
+  container.innerHTML = '';
+
+  const canvas = document.createElement('canvas');
+  const dpr = window.devicePixelRatio || 1;
+  const w = container.clientWidth;
+  const h = container.clientHeight || (window.innerHeight - 52);
+  canvas.width = w * dpr;
+  canvas.height = h * dpr;
+  canvas.style.width = w + 'px';
+  canvas.style.height = h + 'px';
+  container.appendChild(canvas);
+
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const pad = { top: 40, right: 30, bottom: 50, left: 70 };
+  const cw = w - pad.left - pad.right;
+  const ch = h - pad.top - pad.bottom;
+
+  // Axes
+  const maxPay = Math.max(...filteredData.map(o => o.pay_monthly), 1000);
+
+  ctx.strokeStyle = '#ddd';
+  ctx.lineWidth = 1;
+
+  // Grid
+  for (let i = 0; i <= 10; i++) {
+    const y = pad.top + ch - (i / 10) * ch;
+    ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(pad.left + cw, y); ctx.stroke();
+    ctx.fillStyle = '#888'; ctx.font = '11px system-ui'; ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+    ctx.fillText(i.toString(), pad.left - 8, y);
+  }
+
+  for (let p = 0; p <= maxPay; p += 2000) {
+    const x = pad.left + (p / maxPay) * cw;
+    ctx.beginPath(); ctx.moveTo(x, pad.top); ctx.lineTo(x, pad.top + ch); ctx.stroke();
+    ctx.fillStyle = '#888'; ctx.font = '11px system-ui'; ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+    ctx.fillText(`${(p/1000).toFixed(0)}k`, x, pad.top + ch + 8);
+  }
+
+  // Labels
+  ctx.fillStyle = '#333'; ctx.font = '13px system-ui';
+  ctx.textAlign = 'center';
+  ctx.fillText('Monthly Pay (SGD)', pad.left + cw / 2, h - 8);
+  ctx.save();
+  ctx.translate(16, pad.top + ch / 2);
+  ctx.rotate(-Math.PI / 2);
+  ctx.fillText('AI Exposure Score', 0, 0);
+  ctx.restore();
+
+  // Title
+  ctx.font = 'bold 15px system-ui'; ctx.textAlign = 'left';
+  ctx.fillText('Exposure vs Pay', pad.left, 24);
+
+  // Points
+  for (const occ of filteredData) {
+    const x = pad.left + (occ.pay_monthly / maxPay) * cw;
+    const y = pad.top + ch - (occ.exposure / 10) * ch;
+    ctx.fillStyle = exposureColor(occ.exposure);
+    ctx.globalAlpha = 0.7;
+    ctx.beginPath();
+    ctx.arc(x, y, 5, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+}
+
+// ============================================================
+// Tooltip
+// ============================================================
+function showTooltip(occ, mx, my) {
+  const tt = document.getElementById('tooltip');
+  const sfBadge = occ.skillsfuture_funded ? '<span style="color:#2e7d32">● SkillsFuture</span>' : '';
+  tt.innerHTML = `
+    <div class="tt-title">${occ.title}</div>
+    <div class="tt-row"><span class="tt-label">SSOC</span><span>${occ.ssoc_code}</span></div>
+    ${occ.sector ? `<div class="tt-row"><span class="tt-label">Sector</span><span>${occ.sector}</span></div>` : ''}
+    <div class="tt-row"><span class="tt-label">Monthly Pay</span><span>SGD ${occ.pay_monthly.toLocaleString()}</span></div>
+    <div class="tt-row">
+      <span class="tt-label">Exposure</span>
+      <span class="tt-badge" style="background:${exposureColor(occ.exposure)};color:${occ.exposure >= 5 ? '#fff' : '#000'}">${occ.exposure}/10</span>
+    </div>
+    ${sfBadge ? `<div style="margin-top:4px">${sfBadge}</div>` : ''}
+  `;
+  tt.style.display = 'block';
+
+  // Position
+  const tw = tt.offsetWidth;
+  const th = tt.offsetHeight;
+  let left = mx + 12;
+  let top = my + 12;
+  if (left + tw > window.innerWidth - 8) left = mx - tw - 12;
+  if (top + th > window.innerHeight - 8) top = my - th - 12;
+  tt.style.left = left + 'px';
+  tt.style.top = top + 'px';
+}
+
+function hideTooltip() {
+  document.getElementById('tooltip').style.display = 'none';
+}
+
+// ============================================================
+// Detail Panel
+// ============================================================
+function showDetail(occ) {
+  selectedTile = occ;
+  const panel = document.getElementById('detail-panel');
+  const content = document.getElementById('detail-content');
+
+  const payRange = occ.pay_p25 && occ.pay_p75
+    ? `<div>Range: SGD ${occ.pay_p25.toLocaleString()} – SGD ${occ.pay_p75.toLocaleString()} (P25-P75)</div>`
+    : '';
+
+  const tasksList = occ.tasks.length > 0
+    ? `<div class="dp-section"><h4>Key Tasks (SkillsFuture)</h4><ul>${occ.tasks.map(t => `<li>${t}</li>`).join('')}</ul></div>`
+    : '';
+
+  const skillsList = occ.skills && occ.skills.length > 0
+    ? `<div class="dp-section"><h4>Technical Skills</h4><ul>${occ.skills.map(s => `<li>${s}</li>`).join('')}</ul></div>`
+    : '';
+
+  const sfBadge = occ.skillsfuture_funded
+    ? '<span class="dp-badge dp-sf-badge">● SkillsFuture Funded</span>'
+    : '';
+
+  content.innerHTML = `
+    <h2>${occ.title}</h2>
+    <div class="dp-ssoc">SSOC ${occ.ssoc_code}${occ.sector ? ` · ${occ.sector}` : ''} · ${occ.category_label}</div>
+    ${sfBadge}
+    <div class="dp-section" style="margin-top:12px">
+      <h4>AI Exposure Score</h4>
+      <div style="font-size:28px;font-weight:700;color:${exposureColor(occ.exposure)}">${occ.exposure}<span style="font-size:16px;color:#888">/10</span></div>
+      <div class="dp-score-bar"><div class="dp-score-fill" style="width:${occ.exposure * 10}%;background:${exposureColor(occ.exposure)}"></div></div>
+    </div>
+    <div class="dp-section">
+      <h4>Rationale</h4>
+      <p>${occ.exposure_rationale}</p>
+    </div>
+    <div class="dp-section">
+      <h4>Pay</h4>
+      <div style="font-size:16px;font-weight:600">SGD ${occ.pay_monthly.toLocaleString()}/month</div>
+      ${payRange}
+    </div>
+    ${tasksList}
+    ${skillsList}
+  `;
+
+  panel.classList.add('open');
+  render();
+}
+
+function hideDetail() {
+  selectedTile = null;
+  document.getElementById('detail-panel').classList.remove('open');
+  render();
+}
+
+// ============================================================
+// Event Handlers
+// ============================================================
+function findTileAt(x, y) {
+  // Search in reverse (top tiles drawn last)
+  for (let i = tileRects.length - 1; i >= 0; i--) {
+    const t = tileRects[i];
+    if (x >= t.x && x <= t.x + t.w && y >= t.y && y <= t.y + t.h) {
+      return t.occ;
+    }
+  }
+  return null;
+}
+
+function setupEvents() {
+  const canvas = document.getElementById('treemap');
+  const wrap = document.getElementById('canvas-wrap');
+
+  canvas.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const occ = findTileAt(x, y);
+
+    if (occ) {
+      canvas.style.cursor = 'pointer';
+      if (!hoveredTile || hoveredTile.slug !== occ.slug) {
+        hoveredTile = occ;
+        render();
+      }
+      showTooltip(occ, e.clientX, e.clientY);
+    } else {
+      if (hoveredTile) {
+        hoveredTile = null;
+        render();
+      }
+      canvas.style.cursor = 'default';
+      hideTooltip();
+    }
+  });
+
+  canvas.addEventListener('mouseleave', () => {
+    if (hoveredTile) { hoveredTile = null; render(); }
+    hideTooltip();
+  });
+
+  canvas.addEventListener('click', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const occ = findTileAt(x, y);
+    if (occ) showDetail(occ);
+  });
+
+  document.getElementById('close-detail').addEventListener('click', hideDetail);
+
+  // Size mode buttons
+  document.querySelectorAll('[data-size]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-size]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      sizeMode = btn.dataset.size;
+      render();
+    });
+  });
+
+  // View toggle
+  document.getElementById('btn-chart').addEventListener('click', () => {
+    currentView = 'chart';
+    document.getElementById('canvas-wrap').classList.add('hidden');
+    document.getElementById('chart-view').classList.add('active');
+    document.getElementById('btn-chart').style.display = 'none';
+    document.getElementById('btn-treemap').style.display = '';
+    renderChart();
+  });
+
+  document.getElementById('btn-treemap').addEventListener('click', () => {
+    currentView = 'treemap';
+    document.getElementById('canvas-wrap').classList.remove('hidden');
+    document.getElementById('chart-view').classList.remove('active');
+    document.getElementById('btn-treemap').style.display = 'none';
+    document.getElementById('btn-chart').style.display = '';
+    render();
+  });
+
+  // Filters
+  document.getElementById('search').addEventListener('input', debounce(() => {
+    applyFilters();
+    if (currentView === 'treemap') render(); else renderChart();
+  }, 200));
+
+  document.querySelectorAll('.tier-filter').forEach(cb => {
+    cb.addEventListener('change', () => {
+      applyFilters();
+      if (currentView === 'treemap') render(); else renderChart();
+    });
+  });
+
+  document.getElementById('sector-filter').addEventListener('change', () => {
+    applyFilters();
+    if (currentView === 'treemap') render(); else renderChart();
+  });
+
+  // Methodology modal
+  document.getElementById('btn-methodology').addEventListener('click', () => {
+    document.getElementById('methodology-modal').classList.add('open');
+  });
+  document.getElementById('close-modal').addEventListener('click', () => {
+    document.getElementById('methodology-modal').classList.remove('open');
+  });
+  document.getElementById('methodology-modal').addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) {
+      document.getElementById('methodology-modal').classList.remove('open');
+    }
+  });
+
+  // Resize
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (currentView === 'treemap') render(); else renderChart();
+    }, 150);
+  });
+}
+
+function debounce(fn, ms) {
+  let timer;
+  return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); };
+}
+
+// ============================================================
+// Legend gradient
+// ============================================================
+function setupLegend() {
+  const el = document.getElementById('legend-gradient');
+  const canvas = document.createElement('canvas');
+  canvas.width = 120; canvas.height = 12;
+  const ctx = canvas.getContext('2d');
+  for (let i = 0; i < 120; i++) {
+    ctx.fillStyle = exposureColor((i / 119) * 10);
+    ctx.fillRect(i, 0, 1, 12);
+  }
+  el.style.background = `url(${canvas.toDataURL()})`;
+  el.style.backgroundSize = '100% 100%';
+}
+
+// ============================================================
+// Init
+// ============================================================
+async function init() {
+  try {
+    const res = await fetch('data.json');
+    if (!res.ok) throw new Error(`Failed to load data.json: ${res.status}`);
+    allData = await res.json();
+  } catch (err) {
+    document.getElementById('loading').textContent = 'Error loading data: ' + err.message;
+    return;
+  }
+
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('legend').style.display = '';
+
+  // Populate sector filter
+  const sectors = [...new Set(allData.map(o => o.sector).filter(Boolean))].sort();
+  const select = document.getElementById('sector-filter');
+  for (const s of sectors) {
+    const opt = document.createElement('option');
+    opt.value = s; opt.textContent = s;
+    select.appendChild(opt);
+  }
+
+  filteredData = [...allData];
+  updateStats();
+  setupLegend();
+  setupEvents();
+  render();
+}
+
+init();
+</script>
+</body>
+</html>
