@@ -1,0 +1,2250 @@
+{
+  "administration-manager": {
+    "exposure": 6,
+    "rationale": "Administration manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "advertisingpublic-relations-manager": {
+    "exposure": 6,
+    "rationale": "Advertising/Public relations manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "aged-care-services-manager": {
+    "exposure": 6,
+    "rationale": "Aged care services manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "arts-and-cultural-centre-manager-including-gallery-and-museum-manager": {
+    "exposure": 6,
+    "rationale": "Arts and cultural centre manager (including gallery and museum manager) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "attractions-manager": {
+    "exposure": 8,
+    "rationale": "Attractions manager involves mostly digital/cognitive work that AI can substantially perform. Many core tasks around analysis, content creation, and information processing are within current AI capabilities, though complex judgment calls remain human."
+  },
+  "audit-manager": {
+    "exposure": 8,
+    "rationale": "Audit manager involves mostly digital/cognitive work that AI can substantially perform. Many core tasks around analysis, content creation, and information processing are within current AI capabilities, though complex judgment calls remain human."
+  },
+  "budgeting-and-financial-accounting-manager-including-financial-controller": {
+    "exposure": 6,
+    "rationale": "Budgeting and financial accounting manager (including financial controller) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "business-development-manager": {
+    "exposure": 7,
+    "rationale": "Business development manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "call-centre-manager": {
+    "exposure": 7,
+    "rationale": "Call centre manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "catering-manager": {
+    "exposure": 7,
+    "rationale": "Catering manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "chief-information-officerchief-technology-officerchief-security-officer": {
+    "exposure": 6,
+    "rationale": "Chief information officer/Chief technology officer/Chief security officer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "chief-operating-officergeneral-manager": {
+    "exposure": 6,
+    "rationale": "Chief operating officer/General Manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "community-partnership-and-relations-manager": {
+    "exposure": 6,
+    "rationale": "Community, partnership and relations manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "company-director": {
+    "exposure": 6,
+    "rationale": "Company director is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "construction-manager": {
+    "exposure": 6,
+    "rationale": "Construction manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "customer-service-manager": {
+    "exposure": 6,
+    "rationale": "Customer service manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "event-manager": {
+    "exposure": 6,
+    "rationale": "Event manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "financial-risk-manager": {
+    "exposure": 8,
+    "rationale": "Financial risk manager involves mostly digital/cognitive work that AI can substantially perform. Many core tasks around analysis, content creation, and information processing are within current AI capabilities, though complex judgment calls remain human."
+  },
+  "financial-services-manager": {
+    "exposure": 6,
+    "rationale": "Financial services manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "food-and-beverage-operations-manager": {
+    "exposure": 6,
+    "rationale": "Food and beverage operations manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "health-services-manager": {
+    "exposure": 7,
+    "rationale": "Health services manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "hotel-operationslodging-services-manager": {
+    "exposure": 6,
+    "rationale": "Hotel operations/Lodging services manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "ict-service-manager": {
+    "exposure": 6,
+    "rationale": "ICT service manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "industrial-relations-manager": {
+    "exposure": 6,
+    "rationale": "Industrial relations manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "insurance-services-manager": {
+    "exposure": 6,
+    "rationale": "Insurance services manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "landscape-manager": {
+    "exposure": 8,
+    "rationale": "Landscape manager involves mostly digital/cognitive work that AI can substantially perform. Many core tasks around analysis, content creation, and information processing are within current AI capabilities, though complex judgment calls remain human."
+  },
+  "managing-directorchief-executive-officer": {
+    "exposure": 6,
+    "rationale": "Managing director/Chief executive officer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "manufacturing-manager": {
+    "exposure": 7,
+    "rationale": "Manufacturing manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "marketing-manager": {
+    "exposure": 7,
+    "rationale": "Marketing manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "media-and-broadcasting-manager": {
+    "exposure": 6,
+    "rationale": "Media and broadcasting manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "merchandisingcategory-manager": {
+    "exposure": 6,
+    "rationale": "Merchandising/Category manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "network-communications-and-infrastructure-manager": {
+    "exposure": 6,
+    "rationale": "Network, communications and infrastructure manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "online-sales-channel-manager": {
+    "exposure": 6,
+    "rationale": "Online sales channel manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "personnelhuman-resource-manager": {
+    "exposure": 6,
+    "rationale": "Personnel/Human resource manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "policy-manager": {
+    "exposure": 6,
+    "rationale": "Policy manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "portshipping-operations-manager": {
+    "exposure": 6,
+    "rationale": "Port/Shipping operations manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "postal-service-manager": {
+    "exposure": 6,
+    "rationale": "Postal service manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "premises-and-facilities-maintenance-manager-excluding-building-security-manager": {
+    "exposure": 6,
+    "rationale": "Premises and facilities maintenance manager (excluding building security manager) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "pre-school-education-manager": {
+    "exposure": 6,
+    "rationale": "Pre-school education manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "procurementpurchasing-manager": {
+    "exposure": 6,
+    "rationale": "Procurement/Purchasing manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "production-manager-in-agriculture-and-fisheries": {
+    "exposure": 6,
+    "rationale": "Production manager in agriculture and fisheries is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "quality-controlassurance-manager": {
+    "exposure": 6,
+    "rationale": "Quality control/assurance manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "regional-sales-manager": {
+    "exposure": 6,
+    "rationale": "Regional sales manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "research-and-development-manager": {
+    "exposure": 6,
+    "rationale": "Research and development manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "restaurant-manager": {
+    "exposure": 6,
+    "rationale": "Restaurant manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "retail-manager": {
+    "exposure": 6,
+    "rationale": "Retail manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "risk-management-manager": {
+    "exposure": 6,
+    "rationale": "Risk management manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "sales-manager": {
+    "exposure": 6,
+    "rationale": "Sales manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "school-principal": {
+    "exposure": 6,
+    "rationale": "School principal is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "security-manager": {
+    "exposure": 6,
+    "rationale": "Security manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "social-service-manager": {
+    "exposure": 6,
+    "rationale": "Social service manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "software-and-applications-manager": {
+    "exposure": 8,
+    "rationale": "Software and applications manager is highly exposed to AI automation. Core tasks are primarily digital and cognitive, falling within current AI capabilities for analysis, generation, and processing."
+  },
+  "sports-centre-manager": {
+    "exposure": 6,
+    "rationale": "Sports centre manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "strategic-planning-manager": {
+    "exposure": 6,
+    "rationale": "Strategic planning manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "supply-and-distributionlogisticswarehousing-manager": {
+    "exposure": 6,
+    "rationale": "Supply and distribution/Logistics/Warehousing manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "technicalengineering-services-manager-excluding-transport": {
+    "exposure": 6,
+    "rationale": "Technical/Engineering services manager (excluding transport) involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "training-manager": {
+    "exposure": 7,
+    "rationale": "Training manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "transporttechnical-operations-manager-except-portshipping-operations": {
+    "exposure": 6,
+    "rationale": "Transport/Technical operations manager (except port/shipping operations) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "travel-agency-manager": {
+    "exposure": 6,
+    "rationale": "Travel agency manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "wellness-centre-manager-eg-hairbeautyslimmingspamanicuremassage": {
+    "exposure": 6,
+    "rationale": "Wellness centre manager (e.g. hair/beauty/slimming/spa/manicure/massage) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "wholesale-trade-manager": {
+    "exposure": 6,
+    "rationale": "Wholesale trade manager is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "accountant-excluding-tax-accountant": {
+    "exposure": 6,
+    "rationale": "Accountant (excluding tax accountant) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "actuary": {
+    "exposure": 6,
+    "rationale": "Actuary is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "aeronautical-engineer": {
+    "exposure": 6,
+    "rationale": "Aeronautical engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "air-conditioningrefrigeration-engineer": {
+    "exposure": 6,
+    "rationale": "Air-conditioning/Refrigeration engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "anaesthesiologist": {
+    "exposure": 6,
+    "rationale": "Anaesthesiologist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "applicationssystems-programmer": {
+    "exposure": 8,
+    "rationale": "Applications/Systems programmer is highly exposed to AI automation. Core tasks are primarily digital and cognitive, falling within current AI capabilities for analysis, generation, and processing."
+  },
+  "artistic-director-stage-film-television-game-and-radio": {
+    "exposure": 6,
+    "rationale": "Artistic director (stage, film, television, game and radio) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "audio-and-video-equipment-engineer": {
+    "exposure": 6,
+    "rationale": "Audio and video equipment engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "audiologist": {
+    "exposure": 6,
+    "rationale": "Audiologist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "auditor-accounting": {
+    "exposure": 6,
+    "rationale": "Auditor (accounting) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "author": {
+    "exposure": 6,
+    "rationale": "Author is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "automation-engineer-including-robotics-engineer": {
+    "exposure": 6,
+    "rationale": "Automation engineer (including robotics engineer) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "biochemist": {
+    "exposure": 6,
+    "rationale": "Biochemist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "biologist": {
+    "exposure": 6,
+    "rationale": "Biologist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "biomedical-engineer": {
+    "exposure": 6,
+    "rationale": "Biomedical engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "building-architect": {
+    "exposure": 6,
+    "rationale": "Building architect is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "building-construction-engineer": {
+    "exposure": 6,
+    "rationale": "Building construction engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "business-and-financial-project-management-professional": {
+    "exposure": 6,
+    "rationale": "Business and financial project management professional is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "business-consultant": {
+    "exposure": 6,
+    "rationale": "Business consultant is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "business-valuer": {
+    "exposure": 6,
+    "rationale": "Business valuer involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "cardiothoracic-surgeon": {
+    "exposure": 2,
+    "rationale": "Cardiothoracic surgeon requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "career-coach-counselling": {
+    "exposure": 6,
+    "rationale": "Career coach (counselling) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "chemist": {
+    "exposure": 6,
+    "rationale": "Chemist involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "chief-engineersecond-engineer-ship": {
+    "exposure": 6,
+    "rationale": "Chief engineer/Second engineer (ship) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "civil-engineer": {
+    "exposure": 6,
+    "rationale": "Civil engineer involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "clinical-psychologist": {
+    "exposure": 6,
+    "rationale": "Clinical psychologist involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "clinical-research-professional": {
+    "exposure": 6,
+    "rationale": "Clinical research professional is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "cloud-specialist": {
+    "exposure": 6,
+    "rationale": "Cloud specialist involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "commercial-airline-pilot": {
+    "exposure": 2,
+    "rationale": "Commercial airline pilot requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "commodities-and-freight-derivatives-broker": {
+    "exposure": 6,
+    "rationale": "Commodities and freight derivatives broker is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "commodities-trader-excluding-oil-and-bunker": {
+    "exposure": 6,
+    "rationale": "Commodities trader (excluding oil and bunker) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "compliance-officerrisk-analyst-financial": {
+    "exposure": 6,
+    "rationale": "Compliance officer/Risk analyst (financial) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "computer-engineer": {
+    "exposure": 6,
+    "rationale": "Computer engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "content-writer": {
+    "exposure": 9,
+    "rationale": "Content writer involves mostly digital/cognitive work that AI can substantially perform. Many core tasks around analysis, content creation, and information processing are within current AI capabilities, though complex judgment calls remain human."
+  },
+  "counsellor-family": {
+    "exposure": 6,
+    "rationale": "Counsellor (family) involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "creative-advertising-professional": {
+    "exposure": 6,
+    "rationale": "Creative advertising professional is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "curator": {
+    "exposure": 6,
+    "rationale": "Curator involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "cyber-risk-specialist": {
+    "exposure": 6,
+    "rationale": "Cyber risk specialist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "cybersecurity-architect": {
+    "exposure": 6,
+    "rationale": "Cybersecurity architect is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "data-centre-engineer": {
+    "exposure": 6,
+    "rationale": "Data centre engineer involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "data-scientist": {
+    "exposure": 10,
+    "rationale": "Data scientist involves routine, fully digital tasks that AI can nearly fully automate. Core functions are repetitive information processing with minimal need for human judgment or physical presence."
+  },
+  "database-administrator": {
+    "exposure": 6,
+    "rationale": "Database administrator is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "database-architect": {
+    "exposure": 6,
+    "rationale": "Database architect is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "dermatologist": {
+    "exposure": 6,
+    "rationale": "Dermatologist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "diagnostic-radiologist": {
+    "exposure": 6,
+    "rationale": "Diagnostic radiologist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "dietitian": {
+    "exposure": 6,
+    "rationale": "Dietitian is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "digital-marketing-professional-eg-online-social-media-e-commerce-marketing-professional": {
+    "exposure": 6,
+    "rationale": "Digital marketing professional (e.g. online, social media, e-commerce marketing professional) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "director-stage-film-television-game-commercial-video-and-radio": {
+    "exposure": 6,
+    "rationale": "Director (stage, film, television, game, commercial, video and radio) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "early-intervention-teacher-for-infants-and-children": {
+    "exposure": 6,
+    "rationale": "Early intervention teacher for infants and children is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "economist": {
+    "exposure": 6,
+    "rationale": "Economist involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "editor-news-and-periodicals": {
+    "exposure": 6,
+    "rationale": "Editor (news and periodicals) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "editor-radio-television-and-video": {
+    "exposure": 6,
+    "rationale": "Editor (radio, television and video) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "electrical-engineer": {
+    "exposure": 6,
+    "rationale": "Electrical engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "electronics-engineer": {
+    "exposure": 6,
+    "rationale": "Electronics engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "embedded-systems-engineer-including-port-systems-engineer": {
+    "exposure": 6,
+    "rationale": "Embedded systems engineer (including port systems engineer) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "emergency-physician": {
+    "exposure": 2,
+    "rationale": "Emergency physician requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "energy-engineer": {
+    "exposure": 6,
+    "rationale": "Energy engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "enterprisesolution-architect": {
+    "exposure": 6,
+    "rationale": "Enterprise/Solution architect is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "environmental-engineer": {
+    "exposure": 6,
+    "rationale": "Environmental engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "environmental-officer-environmental-protection": {
+    "exposure": 6,
+    "rationale": "Environmental officer (environmental protection) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "environmental-officer-public-health": {
+    "exposure": 6,
+    "rationale": "Environmental officer (public health) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "executive-search-consultant": {
+    "exposure": 6,
+    "rationale": "Executive search consultant involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "fashion-designer": {
+    "exposure": 6,
+    "rationale": "Fashion designer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "financial-analyst-eg-equities-analyst-credit-analyst-investment-research-analyst": {
+    "exposure": 8,
+    "rationale": "Financial analyst (e.g. equities analyst, credit analyst, investment research analyst) is highly exposed to AI automation. Core tasks are primarily digital and cognitive, falling within current AI capabilities for analysis, generation, and processing."
+  },
+  "financial-product-structurer": {
+    "exposure": 6,
+    "rationale": "Financial product structurer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "financialinvestment-adviser-eg-relationship-manager": {
+    "exposure": 6,
+    "rationale": "Financial/Investment adviser (e.g. relationship manager) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "flying-instructor-except-air-force": {
+    "exposure": 6,
+    "rationale": "Flying instructor (except air force) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "food-and-drink-technologist": {
+    "exposure": 5,
+    "rationale": "Food and drink technologist has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "foreign-exchange-broker": {
+    "exposure": 6,
+    "rationale": "Foreign exchange broker is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "foreign-exchange-dealer": {
+    "exposure": 6,
+    "rationale": "Foreign exchange dealer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "fundportfolio-manager-including-asset-allocator": {
+    "exposure": 6,
+    "rationale": "Fund/Portfolio manager (including asset allocator) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "general-dental-practitioner": {
+    "exposure": 6,
+    "rationale": "General dental practitioner is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "general-practitionerphysician": {
+    "exposure": 2,
+    "rationale": "General practitioner/physician requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "general-surgeon": {
+    "exposure": 2,
+    "rationale": "General surgeon requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "graphic-designer": {
+    "exposure": 8,
+    "rationale": "Graphic designer is highly exposed to AI automation. Core tasks are primarily digital and cognitive, falling within current AI capabilities for analysis, generation, and processing."
+  },
+  "human-resource-consultant-excluding-executive-search-consultant": {
+    "exposure": 6,
+    "rationale": "Human resource consultant (excluding executive search consultant) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "hydrographic-surveyor": {
+    "exposure": 6,
+    "rationale": "Hydrographic surveyor is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "ict-auditor": {
+    "exposure": 6,
+    "rationale": "ICT auditor is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "ict-business-process-consultantbusiness-analyst": {
+    "exposure": 6,
+    "rationale": "ICT business process consultant/Business analyst is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "ict-quality-assurance-specialist": {
+    "exposure": 7,
+    "rationale": "ICT quality assurance specialist involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "ict-sales-and-services-professional": {
+    "exposure": 6,
+    "rationale": "ICT sales and services professional is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "industrial-and-organisational-psychologist": {
+    "exposure": 6,
+    "rationale": "Industrial and organisational psychologist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "industrial-machinery-and-tools-engineer": {
+    "exposure": 6,
+    "rationale": "Industrial machinery and tools engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "industrial-relations-officer": {
+    "exposure": 6,
+    "rationale": "Industrial relations officer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "industrial-safety-engineer": {
+    "exposure": 6,
+    "rationale": "Industrial safety engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "in-house-legal-counsel-except-judiciary-ministries-and-statutory-boards": {
+    "exposure": 6,
+    "rationale": "In-house legal counsel (except judiciary, ministries and statutory boards) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "instrumentation-engineer": {
+    "exposure": 6,
+    "rationale": "Instrumentation engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "insurance-underwriter": {
+    "exposure": 6,
+    "rationale": "Insurance underwriter involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "intellectual-property-agent": {
+    "exposure": 6,
+    "rationale": "Intellectual property agent is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "interaction-designer": {
+    "exposure": 6,
+    "rationale": "Interaction designer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "internal-medicine-physician": {
+    "exposure": 2,
+    "rationale": "Internal medicine physician requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "it-infrastructure-specialist": {
+    "exposure": 7,
+    "rationale": "IT infrastructure specialist involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "journalist": {
+    "exposure": 6,
+    "rationale": "Journalist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "land-surveyor": {
+    "exposure": 6,
+    "rationale": "Land surveyor is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "landscape-architect": {
+    "exposure": 6,
+    "rationale": "Landscape architect involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "librarian": {
+    "exposure": 7,
+    "rationale": "Librarian involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "lift-engineer": {
+    "exposure": 6,
+    "rationale": "Lift engineer involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "management-consultant": {
+    "exposure": 6,
+    "rationale": "Management consultant is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "manufacturing-engineer": {
+    "exposure": 6,
+    "rationale": "Manufacturing engineer involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "marine-engineer": {
+    "exposure": 6,
+    "rationale": "Marine engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "marine-superintendent": {
+    "exposure": 7,
+    "rationale": "Marine superintendent involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "marine-superintendent-engineer": {
+    "exposure": 7,
+    "rationale": "Marine superintendent (engineer) involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "market-research-professional": {
+    "exposure": 6,
+    "rationale": "Market research professional is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "marketing-strategyplanning-professional": {
+    "exposure": 6,
+    "rationale": "Marketing strategy/planning professional is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "materials-engineer": {
+    "exposure": 6,
+    "rationale": "Materials engineer involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "mechanical-engineer": {
+    "exposure": 1,
+    "rationale": "Mechanical engineer involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "media-and-broadcasting-engineer": {
+    "exposure": 6,
+    "rationale": "Media and broadcasting engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "medical-and-pharmaceutical-products-sales-professional": {
+    "exposure": 6,
+    "rationale": "Medical and pharmaceutical products sales professional is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "medical-diagnostic-radiographer": {
+    "exposure": 6,
+    "rationale": "Medical diagnostic radiographer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "medical-laboratory-scientist": {
+    "exposure": 6,
+    "rationale": "Medical laboratory scientist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "medical-scientist": {
+    "exposure": 6,
+    "rationale": "Medical scientist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "medical-social-worker": {
+    "exposure": 6,
+    "rationale": "Medical social worker involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "minister-of-religion": {
+    "exposure": 6,
+    "rationale": "Minister of religion is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "multimedia-including-games-designer": {
+    "exposure": 6,
+    "rationale": "Multimedia (including games) designer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "multimedia-including-games-developer": {
+    "exposure": 8,
+    "rationale": "Multimedia (including games) developer is highly exposed to AI automation. Core tasks are primarily digital and cognitive, falling within current AI capabilities for analysis, generation, and processing."
+  },
+  "multimedia-artist-and-animator": {
+    "exposure": 6,
+    "rationale": "Multimedia artist and animator is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "network-servers-and-computer-systems-administrator": {
+    "exposure": 6,
+    "rationale": "Network, servers and computer systems administrator is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "nutritionist": {
+    "exposure": 7,
+    "rationale": "Nutritionist involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "obstetriciangynaecologist": {
+    "exposure": 6,
+    "rationale": "Obstetrician/Gynaecologist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "occupational-health-and-safety-professional": {
+    "exposure": 6,
+    "rationale": "Occupational health and safety professional is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "occupational-therapist": {
+    "exposure": 7,
+    "rationale": "Occupational therapist involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "oil-and-bunker-trader": {
+    "exposure": 6,
+    "rationale": "Oil and bunker trader is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "operations-research-analyst": {
+    "exposure": 8,
+    "rationale": "Operations research analyst is highly exposed to AI automation. Core tasks are primarily digital and cognitive, falling within current AI capabilities for analysis, generation, and processing."
+  },
+  "ophthalmologist": {
+    "exposure": 6,
+    "rationale": "Ophthalmologist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "optometrist": {
+    "exposure": 6,
+    "rationale": "Optometrist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "orthopaedic-surgeon": {
+    "exposure": 2,
+    "rationale": "Orthopaedic surgeon requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "otorhinolaryngologistear-nose-throat-ent-specialist": {
+    "exposure": 6,
+    "rationale": "Otorhinolaryngologist/Ear, nose, throat (ENT) specialist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "paediatrician": {
+    "exposure": 6,
+    "rationale": "Paediatrician is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "personnelhuman-resource-officer": {
+    "exposure": 6,
+    "rationale": "Personnel/Human resource officer involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "pharmacist-patient-care": {
+    "exposure": 6,
+    "rationale": "Pharmacist (patient care) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "pharmacologist": {
+    "exposure": 6,
+    "rationale": "Pharmacologist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "physiotherapist": {
+    "exposure": 5,
+    "rationale": "Physiotherapist has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "podiatrist": {
+    "exposure": 6,
+    "rationale": "Podiatrist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "policy-administration-professional-eg-policy-analyst": {
+    "exposure": 6,
+    "rationale": "Policy administration professional (e.g. policy analyst) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "power-generation-and-distribution-engineer": {
+    "exposure": 6,
+    "rationale": "Power generation and distribution engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "process-engineer": {
+    "exposure": 5,
+    "rationale": "Process engineer has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "procurement-engineer": {
+    "exposure": 6,
+    "rationale": "Procurement engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "producer-stage-film-television-game-commercial-video-and-radio": {
+    "exposure": 6,
+    "rationale": "Producer (stage, film, television, game, commercial, video and radio) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "product-and-industrial-designer": {
+    "exposure": 6,
+    "rationale": "Product and industrial designer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "production-engineer": {
+    "exposure": 6,
+    "rationale": "Production engineer involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "psychiatrist": {
+    "exposure": 6,
+    "rationale": "Psychiatrist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "public-relationscorporate-communications-professional": {
+    "exposure": 6,
+    "rationale": "Public relations/Corporate communications professional is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "quality-controlassurance-engineer": {
+    "exposure": 6,
+    "rationale": "Quality control/assurance engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "quantity-surveyor": {
+    "exposure": 6,
+    "rationale": "Quantity surveyor is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "radiation-therapist": {
+    "exposure": 6,
+    "rationale": "Radiation therapist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "registered-nurse-and-other-nursing-professional-eg-clinical-nurse-nurse-educator-excluding-enrolled-nurse": {
+    "exposure": 2,
+    "rationale": "Registered nurse and other nursing professional (e.g. clinical nurse, nurse educator, excluding enrolled nurse) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "research-officer-non-statistical": {
+    "exposure": 6,
+    "rationale": "Research officer (non-statistical) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "revenue-specialist": {
+    "exposure": 6,
+    "rationale": "Revenue specialist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "rolling-stock-engineer": {
+    "exposure": 6,
+    "rationale": "Rolling stock engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "sales-professional-institutional-sales-of-financial-products": {
+    "exposure": 6,
+    "rationale": "Sales professional (institutional sales of financial products) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "school-counsellor": {
+    "exposure": 6,
+    "rationale": "School counsellor is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "script-writer-and-editor": {
+    "exposure": 6,
+    "rationale": "Script writer and editor is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "securities-and-finance-broker": {
+    "exposure": 6,
+    "rationale": "Securities and finance broker is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "securities-and-finance-dealer": {
+    "exposure": 6,
+    "rationale": "Securities and finance dealer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "security-operations-specialist": {
+    "exposure": 6,
+    "rationale": "Security operations specialist involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "semi-conductor-engineer": {
+    "exposure": 6,
+    "rationale": "Semi-conductor engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "service-designer": {
+    "exposure": 6,
+    "rationale": "Service designer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "ship-broker-eg-charter-or-sales-purchase": {
+    "exposure": 6,
+    "rationale": "Ship broker (e.g. charter or sales & purchase) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "ship-charterer": {
+    "exposure": 6,
+    "rationale": "Ship charterer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "social-science-researcher": {
+    "exposure": 6,
+    "rationale": "Social science researcher is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "social-worker-general": {
+    "exposure": 6,
+    "rationale": "Social worker (general) involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "software-developer": {
+    "exposure": 8,
+    "rationale": "Software developer involves mostly digital/cognitive work that AI can substantially perform. Many core tasks around analysis, content creation, and information processing are within current AI capabilities, though complex judgment calls remain human."
+  },
+  "speech-therapist": {
+    "exposure": 6,
+    "rationale": "Speech therapist involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "statistical-officerdata-analyst": {
+    "exposure": 8,
+    "rationale": "Statistical officer/Data analyst is highly exposed to AI automation. Core tasks are primarily digital and cognitive, falling within current AI capabilities for analysis, generation, and processing."
+  },
+  "statistician": {
+    "exposure": 8,
+    "rationale": "Statistician is highly exposed to AI automation. Core tasks are primarily digital and cognitive, falling within current AI capabilities for analysis, generation, and processing."
+  },
+  "systems-designeranalyst": {
+    "exposure": 6,
+    "rationale": "Systems designer/analyst is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "tax-accountant": {
+    "exposure": 6,
+    "rationale": "Tax accountant is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "teaching-assistanttutor-in-university": {
+    "exposure": 6,
+    "rationale": "Teaching assistant/Tutor in university is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "technical-sales-professional": {
+    "exposure": 6,
+    "rationale": "Technical sales professional is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "technical-writer": {
+    "exposure": 8,
+    "rationale": "Technical writer involves mostly digital/cognitive work that AI can substantially perform. Many core tasks around analysis, content creation, and information processing are within current AI capabilities, though complex judgment calls remain human."
+  },
+  "technicalvocationalcommercial-education-institute-teacher-and-trainer": {
+    "exposure": 6,
+    "rationale": "Technical/Vocational/Commercial education institute teacher and trainer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "telecommunications-engineer": {
+    "exposure": 6,
+    "rationale": "Telecommunications engineer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "trade-broker": {
+    "exposure": 6,
+    "rationale": "Trade broker is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "traditional-chinese-medicine-practitioner": {
+    "exposure": 6,
+    "rationale": "Traditional Chinese medicine practitioner is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "training-and-staff-development-professional": {
+    "exposure": 6,
+    "rationale": "Training and staff development professional is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "translator": {
+    "exposure": 7,
+    "rationale": "Translator involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "treasury-manager": {
+    "exposure": 6,
+    "rationale": "Treasury manager involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "university-lecturer": {
+    "exposure": 6,
+    "rationale": "University lecturer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "urban-planner": {
+    "exposure": 6,
+    "rationale": "Urban planner is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "urologist": {
+    "exposure": 6,
+    "rationale": "Urologist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "veterinarian": {
+    "exposure": 6,
+    "rationale": "Veterinarian is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "web-and-mobile-applications-developer": {
+    "exposure": 8,
+    "rationale": "Web and mobile applications developer is highly exposed to AI automation. Core tasks are primarily digital and cognitive, falling within current AI capabilities for analysis, generation, and processing."
+  },
+  "advertising-salesman": {
+    "exposure": 5,
+    "rationale": "Advertising salesman involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "aeronautical-engineering-technician": {
+    "exposure": 5,
+    "rationale": "Aeronautical engineering technician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "after-sales-adviserclient-account-service-executive": {
+    "exposure": 5,
+    "rationale": "After sales adviser/Client account service executive involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "air-cargo-officer": {
+    "exposure": 5,
+    "rationale": "Air cargo officer has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "air-transport-equipment-project-executive": {
+    "exposure": 5,
+    "rationale": "Air transport equipment project executive involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "air-transport-service-supervisor": {
+    "exposure": 5,
+    "rationale": "Air transport service supervisor involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "air-conditioningrefrigeration-engineering-technician": {
+    "exposure": 5,
+    "rationale": "Air-conditioning/Refrigeration engineering technician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "appraiservaluer-excluding-intangible-asset-valuer": {
+    "exposure": 5,
+    "rationale": "Appraiser/Valuer (excluding intangible asset valuer) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "architectural-draughtsman": {
+    "exposure": 5,
+    "rationale": "Architectural draughtsman has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "art-and-craft-instructor-extracurriculum": {
+    "exposure": 5,
+    "rationale": "Art and craft instructor (extracurriculum) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "assessor": {
+    "exposure": 5,
+    "rationale": "Assessor has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "assistant-accountant": {
+    "exposure": 5,
+    "rationale": "Assistant accountant has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "assistant-civil-and-structural-engineer": {
+    "exposure": 5,
+    "rationale": "Assistant civil and structural engineer involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "assistant-electrical-engineer": {
+    "exposure": 4,
+    "rationale": "Assistant electrical engineer has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "assistant-electronics-engineer": {
+    "exposure": 4,
+    "rationale": "Assistant electronics engineer has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "assistant-manufacturing-engineer": {
+    "exposure": 4,
+    "rationale": "Assistant manufacturing engineer has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "assistant-mechanical-engineer": {
+    "exposure": 3,
+    "rationale": "Assistant mechanical engineer requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "athletesportsman": {
+    "exposure": 5,
+    "rationale": "Athlete/Sportsman involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "audio-and-video-equipment-technician": {
+    "exposure": 5,
+    "rationale": "Audio and video equipment technician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "audit-associate-professional": {
+    "exposure": 5,
+    "rationale": "Audit associate professional involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "automation-technician": {
+    "exposure": 6,
+    "rationale": "Automation technician involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "automotive-engineering-technician": {
+    "exposure": 5,
+    "rationale": "Automotive engineering technician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "building-technician": {
+    "exposure": 5,
+    "rationale": "Building technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "business-development-executive": {
+    "exposure": 5,
+    "rationale": "Business development executive has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "buyer": {
+    "exposure": 5,
+    "rationale": "Buyer involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "chef": {
+    "exposure": 1,
+    "rationale": "Chef involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "chemical-engineering-technician": {
+    "exposure": 5,
+    "rationale": "Chemical engineering technician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "chemical-engineering-technician-petrochemicals": {
+    "exposure": 5,
+    "rationale": "Chemical engineering technician (petrochemicals) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "chemistry-technician": {
+    "exposure": 4,
+    "rationale": "Chemistry technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "civil-engineering-technician": {
+    "exposure": 5,
+    "rationale": "Civil engineering technician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "civilstructural-engineering-draughtsman": {
+    "exposure": 5,
+    "rationale": "Civil/Structural engineering draughtsman involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "clearing-and-forwarding-agent": {
+    "exposure": 5,
+    "rationale": "Clearing and forwarding agent involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "clinical-research-coordinator": {
+    "exposure": 5,
+    "rationale": "Clinical research coordinator involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "community-health-worker": {
+    "exposure": 5,
+    "rationale": "Community health worker involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "computer-systems-operator": {
+    "exposure": 5,
+    "rationale": "Computer systems operator involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "crewing-executive-ship": {
+    "exposure": 5,
+    "rationale": "Crewing executive (ship) has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "dental-technician": {
+    "exposure": 4,
+    "rationale": "Dental technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "electrical-engineering-technician": {
+    "exposure": 4,
+    "rationale": "Electrical engineering technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "electricalelectronics-draughtsman": {
+    "exposure": 5,
+    "rationale": "Electrical/Electronics draughtsman involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "electronics-engineering-technician": {
+    "exposure": 5,
+    "rationale": "Electronics engineering technician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "employment-agentlabour-contractor": {
+    "exposure": 5,
+    "rationale": "Employment agent/Labour contractor involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "enrolledassistant-nurse-excluding-registered-nurse": {
+    "exposure": 2,
+    "rationale": "Enrolled/Assistant nurse (excluding registered nurse) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "environmental-inspector-environmental-public-health": {
+    "exposure": 5,
+    "rationale": "Environmental inspector (environmental public health) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "exhibitionconferenceevent-planner-including-wedding-plannercoordinator": {
+    "exposure": 5,
+    "rationale": "Exhibition/Conference/Event planner (including wedding planner/coordinator) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "financial-markets-back-office-administrator": {
+    "exposure": 5,
+    "rationale": "Financial markets back office administrator involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "fire-and-safety-inspector": {
+    "exposure": 5,
+    "rationale": "Fire and safety inspector involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "flight-operations-officer": {
+    "exposure": 5,
+    "rationale": "Flight operations officer has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "harbour-pilot": {
+    "exposure": 2,
+    "rationale": "Harbour pilot requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "information-technology-trainer-extracurriculum": {
+    "exposure": 5,
+    "rationale": "Information technology trainer (extracurriculum) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "instrumentation-technician": {
+    "exposure": 6,
+    "rationale": "Instrumentation technician involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "insurance-sales-agentbroker-including-independent-financial-planner": {
+    "exposure": 5,
+    "rationale": "Insurance sales agent/broker (including independent financial planner) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "interior-designer": {
+    "exposure": 5,
+    "rationale": "Interior designer involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "international-market-agentrepresentative-eg-junket-operator": {
+    "exposure": 5,
+    "rationale": "International market agent/representative (e.g. junket operator) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "it-infrastructure-technician": {
+    "exposure": 4,
+    "rationale": "IT Infrastructure technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "it-security-technician": {
+    "exposure": 4,
+    "rationale": "IT security technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "it-support-technician-including-it-user-helpdesk-technician": {
+    "exposure": 5,
+    "rationale": "IT support technician (including IT user helpdesk technician) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "kitchen-operations-headsupervisor": {
+    "exposure": 5,
+    "rationale": "Kitchen operations head/supervisor involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "land-surveying-technician": {
+    "exposure": 5,
+    "rationale": "Land surveying technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "landscape-operations-officer": {
+    "exposure": 5,
+    "rationale": "Landscape operations officer involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "language-instructor-extracurriculum": {
+    "exposure": 5,
+    "rationale": "Language instructor (extracurriculum) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "legal-associate-professional-eg-paralegal": {
+    "exposure": 8,
+    "rationale": "Legal associate professional (e.g. paralegal) is highly exposed to AI automation. Core tasks are primarily digital and cognitive, falling within current AI capabilities for analysis, generation, and processing."
+  },
+  "library-officer": {
+    "exposure": 5,
+    "rationale": "Library officer involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "lift-technician": {
+    "exposure": 5,
+    "rationale": "Lift technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "load-control-officer-aircraft": {
+    "exposure": 5,
+    "rationale": "Load control officer (aircraft) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "logisticsproduction-planner": {
+    "exposure": 5,
+    "rationale": "Logistics/Production planner involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "machiningtooling-technician": {
+    "exposure": 5,
+    "rationale": "Machining/Tooling technician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "maintenance-planner": {
+    "exposure": 5,
+    "rationale": "Maintenance planner has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "management-executive": {
+    "exposure": 5,
+    "rationale": "Management executive involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "manufacturing-engineering-technician": {
+    "exposure": 4,
+    "rationale": "Manufacturing engineering technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "marine-draughtsman": {
+    "exposure": 5,
+    "rationale": "Marine draughtsman involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "marine-engineering-officer-including-third-fourth-and-fifth-engineer": {
+    "exposure": 5,
+    "rationale": "Marine engineering officer (including third, fourth and fifth engineer) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "marine-surveyor-ship-and-nautical": {
+    "exposure": 5,
+    "rationale": "Marine surveyor (ship and nautical) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "marketing-and-sales-executive-food-beverage-services": {
+    "exposure": 5,
+    "rationale": "Marketing and sales executive (food & beverage services) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "martial-arts-instructor": {
+    "exposure": 5,
+    "rationale": "Martial arts instructor involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "massage-therapist": {
+    "exposure": 5,
+    "rationale": "Massage therapist involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "mechanical-draughtsman": {
+    "exposure": 2,
+    "rationale": "Mechanical draughtsman requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "mechanical-engineering-technician": {
+    "exposure": 1,
+    "rationale": "Mechanical engineering technician involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "media-and-broadcasting-operations-technician": {
+    "exposure": 5,
+    "rationale": "Media and broadcasting operations technician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "medical-and-pathology-laboratory-technician": {
+    "exposure": 5,
+    "rationale": "Medical and pathology laboratory technician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "medical-x-ray-technician": {
+    "exposure": 5,
+    "rationale": "Medical X-ray technician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "merchandisingcategory-executive": {
+    "exposure": 5,
+    "rationale": "Merchandising/Category executive involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "music-instructor-extracurriculum": {
+    "exposure": 5,
+    "rationale": "Music instructor (extracurriculum) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "non-ordained-religious-associate-professional": {
+    "exposure": 5,
+    "rationale": "Non-ordained religious associate professional involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "occupational-health-and-safety-inspector": {
+    "exposure": 5,
+    "rationale": "Occupational health and safety inspector involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "online-sales-channel-executive": {
+    "exposure": 5,
+    "rationale": "Online sales channel executive involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "operations-officer-except-transport-operations": {
+    "exposure": 5,
+    "rationale": "Operations officer (except transport operations) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "optician": {
+    "exposure": 5,
+    "rationale": "Optician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "paramedic": {
+    "exposure": 2,
+    "rationale": "Paramedic requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "pastry-chef": {
+    "exposure": 2,
+    "rationale": "Pastry Chef requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "pharmacy-technician": {
+    "exposure": 5,
+    "rationale": "Pharmacy technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "photographer": {
+    "exposure": 5,
+    "rationale": "Photographer involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "physical-fitness-instructor-including-yoga-instructor-and-aerobics-instructor": {
+    "exposure": 5,
+    "rationale": "Physical fitness instructor (including yoga instructor and aerobics instructor) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "portshipping-operations-supervisor-including-post-fixture-and-planner": {
+    "exposure": 5,
+    "rationale": "Port/Shipping operations supervisor (including post-fixture and planner) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "premises-and-facilities-maintenance-officer": {
+    "exposure": 5,
+    "rationale": "Premises and facilities maintenance officer involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "pre-primary-education-teacher": {
+    "exposure": 5,
+    "rationale": "Pre-primary education teacher involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "private-tutor-academic": {
+    "exposure": 5,
+    "rationale": "Private tutor (academic) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "process-engineering-technician": {
+    "exposure": 4,
+    "rationale": "Process engineering technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "production-engineering-technician": {
+    "exposure": 5,
+    "rationale": "Production engineering technician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "purchasing-agent": {
+    "exposure": 5,
+    "rationale": "Purchasing agent involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "quality-assurance-technician": {
+    "exposure": 5,
+    "rationale": "Quality assurance technician involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "real-estate-agent": {
+    "exposure": 5,
+    "rationale": "Real estate agent involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "relief-teacher": {
+    "exposure": 5,
+    "rationale": "Relief teacher involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "resident-technical-officer": {
+    "exposure": 5,
+    "rationale": "Resident technical officer involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "road-transport-operations-officer": {
+    "exposure": 5,
+    "rationale": "Road transport operations officer involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "rolling-stock-engineering-technician": {
+    "exposure": 4,
+    "rationale": "Rolling stock engineering technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "safety-and-security-consultant": {
+    "exposure": 5,
+    "rationale": "Safety and security consultant involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "safety-inspector-vehicles-processes-and-products": {
+    "exposure": 5,
+    "rationale": "Safety inspector (vehicles, processes and products) involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "semi-conductor-technician": {
+    "exposure": 4,
+    "rationale": "Semi-conductor technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "shipping-agentboarding-officer": {
+    "exposure": 5,
+    "rationale": "Shipping agent/Boarding officer involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "social-work-associate": {
+    "exposure": 5,
+    "rationale": "Social work associate has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "sonographer": {
+    "exposure": 5,
+    "rationale": "Sonographer involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "sports-coach": {
+    "exposure": 5,
+    "rationale": "Sports coach involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "tax-associate-professional": {
+    "exposure": 5,
+    "rationale": "Tax associate professional involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "telecommunications-technician": {
+    "exposure": 4,
+    "rationale": "Telecommunications technician has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "train-operations-officer": {
+    "exposure": 5,
+    "rationale": "Train operations officer has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "train-service-supervisor": {
+    "exposure": 5,
+    "rationale": "Train service supervisor has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "veterinary-technicianassistant": {
+    "exposure": 5,
+    "rationale": "Veterinary technician/assistant involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "video-camera-operator": {
+    "exposure": 5,
+    "rationale": "Video camera operator involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "visual-merchandiser": {
+    "exposure": 6,
+    "rationale": "Visual merchandiser involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "volunteer-executive": {
+    "exposure": 5,
+    "rationale": "Volunteer executive has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "website-administratorwebmaster": {
+    "exposure": 5,
+    "rationale": "Website administrator/Webmaster involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "youth-work-associate": {
+    "exposure": 5,
+    "rationale": "Youth work associate has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "air-transport-clerk": {
+    "exposure": 7,
+    "rationale": "Air transport clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "audit-clerk": {
+    "exposure": 7,
+    "rationale": "Audit clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "bank-operations-clerk": {
+    "exposure": 8,
+    "rationale": "Bank operations clerk involves mostly digital/cognitive work that AI can substantially perform. Many core tasks around analysis, content creation, and information processing are within current AI capabilities, though complex judgment calls remain human."
+  },
+  "bank-teller": {
+    "exposure": 7,
+    "rationale": "Bank teller is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "bill-collector": {
+    "exposure": 7,
+    "rationale": "Bill collector is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "billing-clerk": {
+    "exposure": 7,
+    "rationale": "Billing clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "bookkeeper": {
+    "exposure": 7,
+    "rationale": "Bookkeeper is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "contact-centre-information-clerk": {
+    "exposure": 7,
+    "rationale": "Contact centre information clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "customer-service-officerclerk": {
+    "exposure": 7,
+    "rationale": "Customer service officer/clerk involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "data-entry-clerk": {
+    "exposure": 8,
+    "rationale": "Data entry clerk is highly exposed to AI automation. Core tasks are primarily digital and cognitive, falling within current AI capabilities for analysis, generation, and processing."
+  },
+  "data-processing-control-clerk": {
+    "exposure": 7,
+    "rationale": "Data processing control clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "enumeratormarket-research-interviewer": {
+    "exposure": 7,
+    "rationale": "Enumerator/Market research interviewer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "hotel-executive-including-hotel-reservation-and-front-desk-executive": {
+    "exposure": 7,
+    "rationale": "Hotel executive (including hotel reservation and front desk executive) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "hotel-receptionist-including-hotel-reservation-and-front-desk-clerk": {
+    "exposure": 7,
+    "rationale": "Hotel receptionist (including hotel reservation and front desk clerk) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "insuranceunderwriting-clerk": {
+    "exposure": 7,
+    "rationale": "Insurance/Underwriting clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "land-transport-clerk": {
+    "exposure": 7,
+    "rationale": "Land transport clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "ledger-and-accounts-clerk": {
+    "exposure": 7,
+    "rationale": "Ledger and accounts clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "legal-clerk": {
+    "exposure": 7,
+    "rationale": "Legal clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "library-clerk": {
+    "exposure": 7,
+    "rationale": "Library clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "material-planning-clerk": {
+    "exposure": 7,
+    "rationale": "Material planning clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "medicaldental-receptionist": {
+    "exposure": 7,
+    "rationale": "Medical/Dental receptionist is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "money-changer": {
+    "exposure": 7,
+    "rationale": "Money changer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "office-clerk-including-filing-and-copying": {
+    "exposure": 7,
+    "rationale": "Office clerk (including filing and copying) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "office-supervisor": {
+    "exposure": 7,
+    "rationale": "Office supervisor involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "passenger-services-agent": {
+    "exposure": 8,
+    "rationale": "Passenger services agent involves mostly digital/cognitive work that AI can substantially perform. Many core tasks around analysis, content creation, and information processing are within current AI capabilities, though complex judgment calls remain human."
+  },
+  "pawnbroker": {
+    "exposure": 7,
+    "rationale": "Pawnbroker is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "payrollwages-clerk": {
+    "exposure": 7,
+    "rationale": "Payroll/Wages clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "personnelhuman-resource-clerk": {
+    "exposure": 7,
+    "rationale": "Personnel/Human resource clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "postal-service-counter-clerk": {
+    "exposure": 7,
+    "rationale": "Postal service counter clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "postman": {
+    "exposure": 7,
+    "rationale": "Postman is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "procurementpurchasing-clerk": {
+    "exposure": 7,
+    "rationale": "Procurement/Purchasing clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "production-planning-clerk": {
+    "exposure": 7,
+    "rationale": "Production planning clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "proofreading-clerk": {
+    "exposure": 7,
+    "rationale": "Proofreading clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "receptionist-general": {
+    "exposure": 7,
+    "rationale": "Receptionist (general) is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "secretary": {
+    "exposure": 7,
+    "rationale": "Secretary is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "securities-clerk": {
+    "exposure": 7,
+    "rationale": "Securities clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "shipping-clerk": {
+    "exposure": 7,
+    "rationale": "Shipping clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "statistical-clerk": {
+    "exposure": 7,
+    "rationale": "Statistical clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "stock-records-clerk": {
+    "exposure": 7,
+    "rationale": "Stock records clerk is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "storekeeper": {
+    "exposure": 7,
+    "rationale": "Storekeeper involves significant knowledge work with AI-automatable components. Tasks involving analysis, reporting, and routine decision-making are increasingly handled by AI, though strategic judgment and stakeholder management remain human."
+  },
+  "telephone-operator": {
+    "exposure": 7,
+    "rationale": "Telephone operator is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "travel-consultantreservation-executive": {
+    "exposure": 7,
+    "rationale": "Travel consultant/Reservation executive is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "typist-and-word-processing-operator": {
+    "exposure": 7,
+    "rationale": "Typist and word processing operator is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "attractions-guide": {
+    "exposure": 3,
+    "rationale": "Attractions guide requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "auxiliary-police-officer": {
+    "exposure": 1,
+    "rationale": "Auxiliary police officer involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "barista": {
+    "exposure": 1,
+    "rationale": "Barista involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "bartendermixologist": {
+    "exposure": 1,
+    "rationale": "Bartender/Mixologist involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "beautician": {
+    "exposure": 2,
+    "rationale": "Beautician requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "bookmakercroupiercasino-dealer-and-related-gaming-worker": {
+    "exposure": 3,
+    "rationale": "Bookmaker/Croupier/Casino dealer and related gaming worker requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "cabin-attendantsteward": {
+    "exposure": 3,
+    "rationale": "Cabin attendant/steward requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "cagecount-supervisor": {
+    "exposure": 3,
+    "rationale": "Cage/Count supervisor requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "captain-waiterwaiter-supervisor": {
+    "exposure": 2,
+    "rationale": "Captain waiter/Waiter supervisor requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "cashier-general": {
+    "exposure": 3,
+    "rationale": "Cashier (general) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "chief-steward": {
+    "exposure": 2,
+    "rationale": "Chief steward requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "childafter-school-care-centre-worker": {
+    "exposure": 3,
+    "rationale": "Child/After school care centre worker requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "cook-eg-commis-cook-23": {
+    "exposure": 2,
+    "rationale": "Cook (e.g. commis cook 2/3) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "dental-aideassistant": {
+    "exposure": 3,
+    "rationale": "Dental aide/assistant requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "driving-instructortester": {
+    "exposure": 4,
+    "rationale": "Driving instructor/tester involves a mix of cognitive and interpersonal/physical work. AI can assist with data analysis and documentation, but human judgment and interaction remain central to the role."
+  },
+  "educarer": {
+    "exposure": 3,
+    "rationale": "Educarer requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "food-service-counter-attendant": {
+    "exposure": 3,
+    "rationale": "Food service counter attendant requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "hair-stylisthairdresser": {
+    "exposure": 2,
+    "rationale": "Hair stylist/Hairdresser requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "healthcare-assistant-eg-therapy-aideassistant": {
+    "exposure": 3,
+    "rationale": "Healthcare assistant (e.g. therapy aide/assistant) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "house-steward": {
+    "exposure": 3,
+    "rationale": "House steward requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "housekeeper-hotels-and-other-establishments": {
+    "exposure": 3,
+    "rationale": "Housekeeper (hotels and other establishments) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "housekeeping-matron": {
+    "exposure": 3,
+    "rationale": "Housekeeping matron requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "insurance-investigator": {
+    "exposure": 3,
+    "rationale": "Insurance investigator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "keepertrainer-in-zoological-bird-and-aquatic-parks": {
+    "exposure": 3,
+    "rationale": "Keeper/Trainer in zoological, bird and aquatic parks requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "lifeguard": {
+    "exposure": 3,
+    "rationale": "Lifeguard requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "manicurist": {
+    "exposure": 3,
+    "rationale": "Manicurist requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "masseur-non-medical-including-foot-reflexologist": {
+    "exposure": 3,
+    "rationale": "Masseur (non-medical) (including foot reflexologist) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "nursing-aideassistant": {
+    "exposure": 2,
+    "rationale": "Nursing aide/assistant requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "petrol-station-attendant": {
+    "exposure": 3,
+    "rationale": "Petrol station attendant requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "private-security-officer": {
+    "exposure": 3,
+    "rationale": "Private security officer requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "rail-station-service-assistant": {
+    "exposure": 3,
+    "rationale": "Rail station service assistant requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "sales-demonstrator": {
+    "exposure": 3,
+    "rationale": "Sales demonstrator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "sales-supervisor": {
+    "exposure": 3,
+    "rationale": "Sales supervisor requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "salesperson-door-to-door": {
+    "exposure": 3,
+    "rationale": "Salesperson (door-to-door) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "security-supervisor": {
+    "exposure": 3,
+    "rationale": "Security supervisor requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "senior-cook-eg-station-chef-commis-cook-1-station-cook": {
+    "exposure": 2,
+    "rationale": "Senior cook (e.g. station chef, commis cook 1, station cook) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "senior-private-security-officer": {
+    "exposure": 3,
+    "rationale": "Senior private security officer requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "senior-security-supervisor": {
+    "exposure": 3,
+    "rationale": "Senior security supervisor requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "shop-sales-assistant": {
+    "exposure": 3,
+    "rationale": "Shop sales assistant requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "slimming-consultant": {
+    "exposure": 3,
+    "rationale": "Slimming consultant requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "teacher-aide": {
+    "exposure": 4,
+    "rationale": "Teacher aide has a mix of automatable and non-automatable tasks. While some tasks like reporting and analysis can be AI-assisted, others requiring judgment, physical presence, or human interaction remain essential."
+  },
+  "telemarketer": {
+    "exposure": 7,
+    "rationale": "Telemarketer is primarily knowledge work with substantial AI exposure. Routine analysis, documentation, and decision-support tasks can be automated, while strategic and interpersonal aspects require humans."
+  },
+  "tour-guide": {
+    "exposure": 3,
+    "rationale": "Tour guide requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "undertaker": {
+    "exposure": 3,
+    "rationale": "Undertaker requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "waiter": {
+    "exposure": 1,
+    "rationale": "Waiter involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "aquarium-fish-farm-worker": {
+    "exposure": 1,
+    "rationale": "Aquarium fish farm worker involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "gardener-and-horticultural-worker": {
+    "exposure": 1,
+    "rationale": "Gardener and horticultural worker involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "landscape-and-plant-nursery-supervisor": {
+    "exposure": 1,
+    "rationale": "Landscape and plant nursery supervisor involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "air-conditioningrefrigeration-equipment-mechanic": {
+    "exposure": 1,
+    "rationale": "Air-conditioning/Refrigeration equipment mechanic involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "automotive-mechanic": {
+    "exposure": 2,
+    "rationale": "Automotive mechanic requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "baker": {
+    "exposure": 0,
+    "rationale": "Baker involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "building-maintenance-worker": {
+    "exposure": 2,
+    "rationale": "Building maintenance worker requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "building-painter": {
+    "exposure": 1,
+    "rationale": "Building painter involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "butcher-fishmonger-and-related-food-preparer": {
+    "exposure": 1,
+    "rationale": "Butcher, fishmonger and related food preparer involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "carpenter": {
+    "exposure": 1,
+    "rationale": "Carpenter involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "electrical-fitter": {
+    "exposure": 2,
+    "rationale": "Electrical fitter requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "electrical-household-appliance-repairer": {
+    "exposure": 2,
+    "rationale": "Electrical household appliance repairer requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "electrical-lift-escalator-and-related-equipment-fitter": {
+    "exposure": 2,
+    "rationale": "Electrical lift, escalator and related equipment fitter requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "electrician": {
+    "exposure": 1,
+    "rationale": "Electrician involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "floorwall-tiler": {
+    "exposure": 2,
+    "rationale": "Floor/Wall tiler requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "fumigator-and-other-pest-and-weed-controller": {
+    "exposure": 2,
+    "rationale": "Fumigator and other pest and weed controller requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "industrialoffice-machinery-mechanic": {
+    "exposure": 1,
+    "rationale": "Industrial/Office machinery mechanic involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "joiner": {
+    "exposure": 2,
+    "rationale": "Joiner requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "lift-supervisor": {
+    "exposure": 2,
+    "rationale": "Lift supervisor requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "locksmith": {
+    "exposure": 2,
+    "rationale": "Locksmith requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "machinery-mechanic": {
+    "exposure": 1,
+    "rationale": "Machinery mechanic involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "medical-device-assemblerrepairer": {
+    "exposure": 2,
+    "rationale": "Medical device assembler/repairer requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "metal-moulder-and-coremaker": {
+    "exposure": 2,
+    "rationale": "Metal moulder and coremaker requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "pastry-and-confectionery-maker": {
+    "exposure": 2,
+    "rationale": "Pastry and confectionery maker requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "plumber": {
+    "exposure": 1,
+    "rationale": "Plumber involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "pre-press-trades-worker": {
+    "exposure": 2,
+    "rationale": "Pre-press trades worker requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "supervisorgeneral-foreman-building-and-related-trades": {
+    "exposure": 2,
+    "rationale": "Supervisor/General foreman (building and related trades) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "supervisorgeneral-foreman-electrical-and-electronic-trades-excluding-lift": {
+    "exposure": 2,
+    "rationale": "Supervisor/General foreman (electrical and electronic trades, excluding lift) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "supervisorgeneral-foreman-food-processing-woodworking-garment-leather-and-related-trades": {
+    "exposure": 2,
+    "rationale": "Supervisor/General foreman (food processing, woodworking, garment, leather and related trades) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "supervisorgeneral-foreman-metal-machinery-and-related-trades": {
+    "exposure": 2,
+    "rationale": "Supervisor/General foreman (metal, machinery and related trades) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "supervisorgeneral-foreman-precision-handicraft-printing-and-related-trades": {
+    "exposure": 2,
+    "rationale": "Supervisor/General foreman (precision, handicraft, printing and related trades) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "tailordressmaker": {
+    "exposure": 2,
+    "rationale": "Tailor/Dressmaker requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "tool-and-die-maker": {
+    "exposure": 2,
+    "rationale": "Tool and die maker requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "underwater-diver": {
+    "exposure": 2,
+    "rationale": "Underwater diver requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "watch-and-clock-assemblerrepairer": {
+    "exposure": 2,
+    "rationale": "Watch and clock assembler/repairer requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "welder-and-flame-cutter": {
+    "exposure": 1,
+    "rationale": "Welder and flame cutter involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "airport-mobile-equipment-operator": {
+    "exposure": 2,
+    "rationale": "Airport mobile equipment operator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "ambulance-driver": {
+    "exposure": 1,
+    "rationale": "Ambulance driver involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "bus-driver": {
+    "exposure": 1,
+    "rationale": "Bus driver involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "chauffeur": {
+    "exposure": 2,
+    "rationale": "Chauffeur requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "concrete-mix-truck-driver": {
+    "exposure": 1,
+    "rationale": "Concrete mix truck driver involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "crane-operator-on-site": {
+    "exposure": 2,
+    "rationale": "Crane operator (on-site) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "cranehoist-operator-excluding-port": {
+    "exposure": 2,
+    "rationale": "Crane/Hoist operator (excluding port) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "dairy-and-confectionery-products-machine-operator": {
+    "exposure": 2,
+    "rationale": "Dairy and confectionery products machine operator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "deckhand-including-lighterman": {
+    "exposure": 2,
+    "rationale": "Deckhand (including lighterman) requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "delivery-man-using-motorised-personal-mobility-aidsdevices": {
+    "exposure": 2,
+    "rationale": "Delivery man using motorised personal mobility aids/devices requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "electronic-equipmentcomponent-assembler": {
+    "exposure": 2,
+    "rationale": "Electronic equipment/component assembler requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "excavatingtrench-digging-machine-operator": {
+    "exposure": 2,
+    "rationale": "Excavating/Trench digging machine operator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "fork-lift-truck-operator": {
+    "exposure": 2,
+    "rationale": "Fork lift truck operator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "lorry-driver": {
+    "exposure": 1,
+    "rationale": "Lorry driver involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "mechanical-equipmentcomponent-assembler": {
+    "exposure": 1,
+    "rationale": "Mechanical equipment/component assembler involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "mechanical-products-quality-checker-and-tester": {
+    "exposure": 1,
+    "rationale": "Mechanical products quality checker and tester involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "metal-heat-treating-plant-operator": {
+    "exposure": 2,
+    "rationale": "Metal heat treating plant operator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "metal-melter-caster-and-rolling-mill-operator": {
+    "exposure": 2,
+    "rationale": "Metal melter, caster and rolling mill operator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "metalworking-machine-setter-operator": {
+    "exposure": 2,
+    "rationale": "Metalworking machine setter-operator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "mobile-machinery-supervisor-and-general-foreman": {
+    "exposure": 2,
+    "rationale": "Mobile machinery supervisor and general foreman requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "motorcycle-delivery-man": {
+    "exposure": 2,
+    "rationale": "Motorcycle delivery man requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "packingbottlinglabelling-machine-operator": {
+    "exposure": 2,
+    "rationale": "Packing/Bottling/Labelling machine operator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "parking-valet": {
+    "exposure": 2,
+    "rationale": "Parking valet requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "port-limit-helmsmansteersmanengine-drivertugmaster": {
+    "exposure": 1,
+    "rationale": "Port limit helmsman/steersman/engine driver/tugmaster involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "precision-grinding-machine-setter-operator": {
+    "exposure": 2,
+    "rationale": "Precision grinding machine setter-operator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "printing-machine-operator": {
+    "exposure": 2,
+    "rationale": "Printing machine operator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "sewing-machine-operator": {
+    "exposure": 2,
+    "rationale": "Sewing machine operator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "stationary-plant-and-machine-supervisorgeneral-foreman": {
+    "exposure": 2,
+    "rationale": "Stationary plant and machine supervisor/general foreman requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "supervisorgeneral-foreman-of-assemblers-and-quality-checkers": {
+    "exposure": 2,
+    "rationale": "Supervisor/General foreman of assemblers and quality checkers requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "trailer-truck-driver-including-prime-mover-driver": {
+    "exposure": 1,
+    "rationale": "Trailer-truck driver (including prime mover driver) involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "train-operator": {
+    "exposure": 2,
+    "rationale": "Train operator requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "van-driver": {
+    "exposure": 1,
+    "rationale": "Van driver involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "waste-truck-driver-including-hooklift-trucks-with-roll-on-containers": {
+    "exposure": 1,
+    "rationale": "Waste truck driver (including hooklift trucks with roll-on containers) involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "aircraft-loader-eg-airport-baggagecargo-handler": {
+    "exposure": 1,
+    "rationale": "Aircraft loader (e.g. airport baggage/cargo handler) involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "bell-captain": {
+    "exposure": 0,
+    "rationale": "Bell captain involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "bellboyhotel-porter": {
+    "exposure": 1,
+    "rationale": "Bellboy/Hotel porter involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "building-caretakerwatchman": {
+    "exposure": 1,
+    "rationale": "Building caretaker/Watchman involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "bus-attendant": {
+    "exposure": 1,
+    "rationale": "Bus attendant involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "car-park-attendant": {
+    "exposure": 1,
+    "rationale": "Car park attendant involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "civil-engineeringbuilding-construction-labourer": {
+    "exposure": 1,
+    "rationale": "Civil engineering/Building construction labourer involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "cleaning-supervisor": {
+    "exposure": 1,
+    "rationale": "Cleaning supervisor involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "concierge-hotel": {
+    "exposure": 1,
+    "rationale": "Concierge (hotel) involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "dishwasher": {
+    "exposure": 1,
+    "rationale": "Dishwasher involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "doorman": {
+    "exposure": 1,
+    "rationale": "Doorman involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "fast-food-preparer": {
+    "exposure": 1,
+    "rationale": "Fast food preparer involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "food-and-beverage-establishments-general-cleaner": {
+    "exposure": 1,
+    "rationale": "Food and beverage establishments general cleaner involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "fooddrink-stall-assistant": {
+    "exposure": 1,
+    "rationale": "Food/Drink stall assistant involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "general-waste-collection-recycling-and-material-recovery-worker": {
+    "exposure": 1,
+    "rationale": "General waste collection, recycling and material recovery worker involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "hand-laundererpresser-non-household": {
+    "exposure": 1,
+    "rationale": "Hand launderer/presser (non-household) involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "hand-packer": {
+    "exposure": 1,
+    "rationale": "Hand packer involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "hospitalclinic-attendant": {
+    "exposure": 1,
+    "rationale": "Hospital/Clinic attendant involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "hotel-cleaner": {
+    "exposure": 1,
+    "rationale": "Hotel cleaner involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "housekeepinglinen-room-attendant": {
+    "exposure": 1,
+    "rationale": "Housekeeping/Linen room attendant involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "kitchen-assistant": {
+    "exposure": 1,
+    "rationale": "Kitchen assistant involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "laboratory-attendant": {
+    "exposure": 1,
+    "rationale": "Laboratory attendant involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "landscape-worker": {
+    "exposure": 3,
+    "rationale": "Landscape worker requires significant physical presence, interpersonal interaction, or hands-on skills that AI cannot readily replicate."
+  },
+  "leaflet-and-newspaper-distributordeliverer": {
+    "exposure": 1,
+    "rationale": "Leaflet and newspaper distributor/deliverer involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "motor-vehicle-cleanerpolisher": {
+    "exposure": 1,
+    "rationale": "Motor vehicle cleaner/polisher involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "mover": {
+    "exposure": 1,
+    "rationale": "Mover involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "odd-job-person": {
+    "exposure": 1,
+    "rationale": "Odd job person involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "office-commercial-and-industrial-establishments-indoor-cleaner": {
+    "exposure": 1,
+    "rationale": "Office, commercial and industrial establishments indoor cleaner involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "office-commercial-and-industrial-establishments-multi-skilled-cleaner-cum-machine-operator": {
+    "exposure": 1,
+    "rationale": "Office, commercial and industrial establishments multi-skilled cleaner cum machine operator involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "office-commercial-and-industrial-establishments-outdoor-cleaner": {
+    "exposure": 1,
+    "rationale": "Office, commercial and industrial establishments outdoor cleaner involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "officelibrary-attendant": {
+    "exposure": 1,
+    "rationale": "Office/Library attendant involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "porter-except-hotel": {
+    "exposure": 1,
+    "rationale": "Porter (except hotel) involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "residential-and-open-areas-general-cleaner": {
+    "exposure": 1,
+    "rationale": "Residential and open areas general cleaner involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "sports-and-recreational-attendant-eg-golf-marshal-golf-caddie-fun-fair-attendant-bowling-alley-attendant-swimming-pool-attendant": {
+    "exposure": 1,
+    "rationale": "Sports and recreational attendant (e.g. golf marshal, golf caddie, fun fair attendant, bowling alley attendant, swimming pool attendant) involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "table-top-cleaner": {
+    "exposure": 1,
+    "rationale": "Table-top cleaner involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "tea-serversteward-excluding-bartender-barista-and-fooddrink-stall-assistant": {
+    "exposure": 0,
+    "rationale": "Tea server/steward (excluding bartender, barista and food/drink stall assistant) involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "tree-workertechnician": {
+    "exposure": 1,
+    "rationale": "Tree worker/technician involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "vehicle-attendant": {
+    "exposure": 1,
+    "rationale": "Vehicle attendant involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "warehouse-worker": {
+    "exposure": 1,
+    "rationale": "Warehouse worker involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  },
+  "waste-recycling-sorter": {
+    "exposure": 1,
+    "rationale": "Waste recycling sorter involves primarily physical, manual work that requires human presence and dexterity. AI has minimal impact on core job functions."
+  }
+}

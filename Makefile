@@ -23,6 +23,9 @@ enrich:
 score:
 	uv run python -m pipeline.score
 
+score-local:
+	uv run python -m pipeline.score_local
+
 validate:
 	uv run python -m pipeline.validate
 

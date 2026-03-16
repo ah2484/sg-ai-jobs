@@ -35,100 +35,93 @@ def slugify(title: str) -> str:
 
 
 def parse_mom_wages(filepath: Path | None = None) -> list[MomOccupation]:
-    """Parse MOM Occupational Wage Survey Excel (Table T4).
+    """Parse MOM Occupational Wage Survey Excel (Table T4 — All Industries).
 
-    Expected columns: SSOC code, occupation title, gross wage percentiles.
+    Fixed layout (0-indexed columns):
+      A(0): row number  B(1): SSOC 2020  C(2): Occupation
+      D(3): Basic P25  E(4): Basic Median  F(5): Basic P75
+      G(6): Gross P25  H(7): Gross Median  I(8): Gross P75
+
+    Major group headers: SSOC = single digit, title = ALL CAPS (e.g. "1", "MANAGERS").
+    Data rows start at Excel row 10 (0-indexed row 9 in openpyxl output).
+    We use Gross Wage columns (G-I) as the primary wage measure.
     """
     if filepath is None:
-        candidates = list(RAW_DIR.glob("*wage*T4*.*")) + list(RAW_DIR.glob("*MOM*.*")) + list(RAW_DIR.glob("*mom*.*"))
+        candidates = (
+            list(RAW_DIR.glob("*table4*.*"))
+            + list(RAW_DIR.glob("*Table4*.*"))
+            + list(RAW_DIR.glob("*T4*.*"))
+            + list(RAW_DIR.glob("*wage*.*"))
+        )
         if not candidates:
             raise FileNotFoundError(
                 f"No MOM wage file found in {RAW_DIR}/. "
-                "Download from MOM Occupational Wage Survey and place in data/raw/."
+                "Download mrsd_2024Wages_table4.xlsx from MOM and place in data/raw/."
             )
         filepath = candidates[0]
 
     print(f"Parsing MOM wages from: {filepath}")
-    df = pd.read_excel(filepath, sheet_name=None)
 
-    # Find the right sheet — look for one with "SSOC" or "occupation" in headers
-    target_sheet = None
-    target_df = None
-    for sheet_name, sheet_df in df.items():
-        # Check first few rows for SSOC-like content
-        header_text = " ".join(str(v) for v in sheet_df.iloc[:5].values.flatten() if pd.notna(v)).lower()
-        if "ssoc" in header_text or "occupation" in header_text:
-            target_sheet = sheet_name
-            target_df = sheet_df
-            break
+    import openpyxl
 
-    if target_df is None:
-        # Fall back to largest sheet
-        target_sheet = max(df.keys(), key=lambda k: len(df[k]))
-        target_df = df[target_sheet]
+    wb = openpyxl.load_workbook(filepath, read_only=True, data_only=True)
 
-    print(f"  Using sheet: {target_sheet} ({len(target_df)} rows)")
-
-    # Find header row (row containing "SSOC" or "Occupation")
-    header_row = 0
-    for i, row in target_df.iterrows():
-        row_text = " ".join(str(v) for v in row.values if pd.notna(v)).lower()
-        if "ssoc" in row_text or "occupation" in row_text:
-            header_row = i
-            break
-
-    # Re-read with correct header
-    target_df.columns = target_df.iloc[header_row]
-    target_df = target_df.iloc[header_row + 1 :].reset_index(drop=True)
-
-    # Normalize column names
-    col_map = {}
-    for col in target_df.columns:
-        col_lower = str(col).lower().strip()
-        if "ssoc" in col_lower and "code" in col_lower:
-            col_map[col] = "ssoc_code"
-        elif "occupation" in col_lower or "title" in col_lower:
-            col_map[col] = "title"
-        elif "median" in col_lower or "50th" in col_lower:
-            col_map[col] = "median"
-        elif "25th" in col_lower:
-            col_map[col] = "p25"
-        elif "75th" in col_lower:
-            col_map[col] = "p75"
-
-    target_df = target_df.rename(columns=col_map)
+    # Use sheet "T4" (All Industries)
+    if "T4" in wb.sheetnames:
+        ws = wb["T4"]
+    else:
+        ws = wb[wb.sheetnames[1]]  # First sheet after Contents
 
     occupations = []
-    for _, row in target_df.iterrows():
-        ssoc = str(row.get("ssoc_code", "")).strip()
-        title = str(row.get("title", "")).strip()
-        median = row.get("median")
+    current_major_group = 0
 
-        if not ssoc or not title or title.lower() == "nan" or ssoc.lower() == "nan":
-            continue
-        if pd.isna(median):
-            continue
+    for row in ws.iter_rows(min_row=9, values_only=True):
+        # row is a tuple of cell values
+        ssoc_raw = str(row[1]).strip() if row[1] is not None else ""
+        title_raw = str(row[2]).strip() if row[2] is not None else ""
 
-        # Clean SSOC code
-        ssoc = re.sub(r"[^0-9]", "", ssoc)
-        if not ssoc:
+        if not ssoc_raw or ssoc_raw == "None" or not title_raw or title_raw == "None":
             continue
 
-        major_group = int(ssoc[0]) if ssoc else 0
-        if major_group < 1 or major_group > 9:
+        # Detect major group header rows (SSOC is single digit, title is ALL CAPS)
+        ssoc_clean = re.sub(r"[^0-9]", "", ssoc_raw)
+        if len(ssoc_clean) == 1 and title_raw == title_raw.upper() and not any(c.isdigit() for c in title_raw):
+            current_major_group = int(ssoc_clean)
             continue
 
+        if len(ssoc_clean) < 4:
+            continue
+
+        # Parse gross wage columns (G=index 6, H=index 7, I=index 8)
+        gross_p25 = row[6] if len(row) > 6 else None
+        gross_median = row[7] if len(row) > 7 else None
+        gross_p75 = row[8] if len(row) > 8 else None
+
+        if gross_median is None:
+            continue
+
+        try:
+            monthly = int(float(gross_median))
+        except (ValueError, TypeError):
+            continue
+
+        major_group = current_major_group if current_major_group > 0 else int(ssoc_clean[0])
         category, category_label = MAJOR_GROUP_LABELS.get(major_group, ("other", "Other"))
 
-        monthly = int(float(median))
-        p25 = int(float(row["p25"])) if "p25" in row and pd.notna(row.get("p25")) else None
-        p75 = int(float(row["p75"])) if "p75" in row and pd.notna(row.get("p75")) else None
+        try:
+            p25 = int(float(gross_p25)) if gross_p25 is not None else None
+        except (ValueError, TypeError):
+            p25 = None
+        try:
+            p75 = int(float(gross_p75)) if gross_p75 is not None else None
+        except (ValueError, TypeError):
+            p75 = None
 
         occupations.append(
             MomOccupation(
-                title=title,
-                slug=slugify(title),
-                ssoc_code=ssoc,
+                title=title_raw,
+                slug=slugify(title_raw),
+                ssoc_code=ssoc_clean,
                 category=category,
                 category_label=category_label,
                 major_group=major_group,
@@ -139,93 +132,116 @@ def parse_mom_wages(filepath: Path | None = None) -> list[MomOccupation]:
             )
         )
 
+    wb.close()
     print(f"  Parsed {len(occupations)} occupations")
     return occupations
 
 
 def parse_skillsfuture(filepath: Path | None = None) -> list[SkillsFutureRole]:
-    """Parse SkillsFuture Skills Framework database.
+    """Parse SkillsFuture Skills Framework combined database.
 
-    Expected structure: multi-sheet Excel with sector tabs, each containing
-    roles with key tasks and technical skills.
+    The Excel has separate sheets for tasks and skills, each with one row per item:
+    - 'Job Role_CWF_KT': Sector, Job Role, Critical Work Function, Key Tasks
+    - 'Job Role_TSC': Sector, Job Role, TSC Title (technical skill competencies)
+    - 'Job Role_Description': Sector, Job Role, Job Role Description
     """
     if filepath is None:
-        candidates = list(RAW_DIR.glob("*skillsfuture*.*")) + list(RAW_DIR.glob("*sfw*.*"))
+        # Prefer the full dataset over the template
+        candidates = (
+            list(RAW_DIR.glob("*skills-framework-dataset*.*"))
+            + list(RAW_DIR.glob("*skillsfuture*.*"))
+            + list(RAW_DIR.glob("*sfw*.*"))
+        )
         if not candidates:
             raise FileNotFoundError(
                 f"No SkillsFuture file found in {RAW_DIR}/. "
-                "Download template_sfw_database---combined.xlsx from SkillsFuture portal."
+                "Download from SkillsFuture Interactive Skills Frameworks (requires Singpass)."
             )
         filepath = candidates[0]
 
     print(f"Parsing SkillsFuture from: {filepath}")
-    df = pd.read_excel(filepath, sheet_name=None)
-    print(f"  Found {len(df)} sheets")
+    sheets = pd.read_excel(filepath, sheet_name=None)
+    print(f"  Found {len(sheets)} sheets: {list(sheets.keys())}")
+
+    # Aggregate tasks per (sector, role) from Key Tasks sheet
+    tasks_by_role: dict[tuple[str, str], list[str]] = {}
+    if "Job Role_CWF_KT" in sheets:
+        kt_df = sheets["Job Role_CWF_KT"]
+        for _, row in kt_df.iterrows():
+            sector = str(row.get("Sector", "")).strip()
+            role = str(row.get("Job Role", "")).strip()
+            task = str(row.get("Key Tasks", "")).strip()
+            if not role or role == "nan" or not task or task == "nan":
+                continue
+            key = (sector, role)
+            if key not in tasks_by_role:
+                tasks_by_role[key] = []
+            if task not in tasks_by_role[key]:
+                tasks_by_role[key].append(task)
+
+    # Aggregate skills per (sector, role) from TSC sheet
+    # Column name varies: "TSC Title" (template) vs "TSC_CCS Title" (full dataset)
+    skills_by_role: dict[tuple[str, str], list[str]] = {}
+    tsc_sheet = "Job Role_TCS_CCS" if "Job Role_TCS_CCS" in sheets else "Job Role_TSC"
+    if tsc_sheet in sheets:
+        tsc_df = sheets[tsc_sheet]
+        skill_col = "TSC_CCS Title" if "TSC_CCS Title" in tsc_df.columns else "TSC Title"
+        # Only include TSC (technical skills), not CCS (core/soft skills)
+        type_col = "TSC_CCS Type" if "TSC_CCS Type" in tsc_df.columns else None
+        for _, row in tsc_df.iterrows():
+            if type_col and str(row.get(type_col, "")).strip().lower() == "ccs":
+                continue
+            sector = str(row.get("Sector", "")).strip()
+            role = str(row.get("Job Role", "")).strip()
+            skill = str(row.get(skill_col, "")).strip()
+            if not role or role == "nan" or not skill or skill == "nan":
+                continue
+            key = (sector, role)
+            if key not in skills_by_role:
+                skills_by_role[key] = []
+            if skill not in skills_by_role[key]:
+                skills_by_role[key].append(skill)
+
+    # Build unique roles from all sheets
+    all_keys: set[tuple[str, str]] = set()
+    all_keys.update(tasks_by_role.keys())
+    all_keys.update(skills_by_role.keys())
+
+    # Also include roles from description sheet
+    if "Job Role_Description" in sheets:
+        desc_df = sheets["Job Role_Description"]
+        for _, row in desc_df.iterrows():
+            sector = str(row.get("Sector", "")).strip()
+            role = str(row.get("Job Role", "")).strip()
+            if role and role != "nan":
+                all_keys.add((sector, role))
 
     roles: list[SkillsFutureRole] = []
-    for sheet_name, sheet_df in df.items():
-        if sheet_name.lower() in ("readme", "instructions", "legend", "contents"):
-            continue
-
-        sector = sheet_name.strip()
-
-        # Try to identify role title, tasks, and skills columns
-        # SkillsFuture format varies — try common patterns
-        cols = [str(c).lower().strip() for c in sheet_df.columns]
-
-        title_col = None
-        task_col = None
-        skill_col = None
-
-        for i, c in enumerate(cols):
-            if "job" in c or "role" in c or "title" in c or "occupation" in c:
-                title_col = sheet_df.columns[i]
-            if "task" in c or "key task" in c or "critical work" in c:
-                task_col = sheet_df.columns[i]
-            if "skill" in c or "competenc" in c or "technical" in c:
-                skill_col = sheet_df.columns[i]
-
-        if title_col is None:
-            # Try first column as title
-            title_col = sheet_df.columns[0]
-
-        for _, row in sheet_df.iterrows():
-            title = str(row.get(title_col, "")).strip()
-            if not title or title.lower() == "nan":
-                continue
-
-            tasks = []
-            if task_col is not None:
-                task_val = str(row.get(task_col, ""))
-                if task_val and task_val.lower() != "nan":
-                    # Split on newlines, bullets, or semicolons
-                    tasks = [t.strip().lstrip("•-·").strip() for t in re.split(r"[\n;•·]", task_val) if t.strip()]
-
-            skills = []
-            if skill_col is not None:
-                skill_val = str(row.get(skill_col, ""))
-                if skill_val and skill_val.lower() != "nan":
-                    skills = [s.strip().lstrip("•-·").strip() for s in re.split(r"[\n;•·]", skill_val) if s.strip()]
-
-            roles.append(
-                SkillsFutureRole(
-                    title=title,
-                    sector=sector,
-                    tasks=tasks,
-                    skills=skills,
-                )
+    for sector, role_title in sorted(all_keys):
+        key = (sector, role_title)
+        roles.append(
+            SkillsFutureRole(
+                title=role_title,
+                sector=sector,
+                tasks=tasks_by_role.get(key, []),
+                skills=skills_by_role.get(key, []),
             )
+        )
 
-    print(f"  Parsed {len(roles)} roles across sectors")
+    print(f"  Parsed {len(roles)} unique roles across {len({r.sector for r in roles})} sectors")
     return roles
 
 
 def match_skillsfuture_to_mom(
     mom_occupations: list[MomOccupation],
     sf_roles: list[SkillsFutureRole],
-    threshold: int = 70,
 ) -> list[Occupation]:
-    """Fuzzy-match SkillsFuture roles to MOM occupations by title."""
+    """Fuzzy-match SkillsFuture roles to MOM occupations by title.
+
+    Two-pass matching:
+    1. token_sort_ratio >= 70 (high confidence)
+    2. WRatio >= 90 for remaining (catches partial matches without false positives)
+    """
     sf_titles = [r.title for r in sf_roles]
     sf_by_title = {r.title: r for r in sf_roles}
 
@@ -233,11 +249,19 @@ def match_skillsfuture_to_mom(
     occupations: list[Occupation] = []
 
     for mom in mom_occupations:
-        best_match = process.extractOne(mom.title, sf_titles, scorer=fuzz.token_sort_ratio)
-
         sf_role = None
-        if best_match and best_match[1] >= threshold:
-            sf_role = sf_by_title[best_match[0]]
+
+        # Pass 1: token_sort_ratio (strict word-level matching)
+        best = process.extractOne(mom.title, sf_titles, scorer=fuzz.token_sort_ratio)
+        if best and best[1] >= 70:
+            sf_role = sf_by_title[best[0]]
+        else:
+            # Pass 2: WRatio (handles partial/substring matches) at high threshold
+            best = process.extractOne(mom.title, sf_titles, scorer=fuzz.WRatio)
+            if best and best[1] >= 90:
+                sf_role = sf_by_title[best[0]]
+
+        if sf_role:
             matched += 1
 
         occupations.append(

@@ -1,0 +1,12 @@
+{
+  "scoring_model": "claude-haiku-4-5-20251001",
+  "temperature": 0.2,
+  "scoring_prompt": "See pipeline/score.py SYSTEM_PROMPT",
+  "data_sources": [
+    "MOM Occupational Wage Survey 2024",
+    "SkillsFuture Skills Framework Database"
+  ],
+  "dual_run": true,
+  "total_occupations": 562,
+  "divergent_occupations": []
+}
