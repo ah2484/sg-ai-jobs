@@ -6,10 +6,11 @@
 <title>Singapore AI Jobs: AI Exposure Treemap</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: system-ui, -apple-system, sans-serif; background: #f5f5f5; color: #1a1a2e; overflow: hidden; height: 100vh; }
+body { font-family: system-ui, -apple-system, sans-serif; background: #f5f5f5; color: #1a1a2e; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
 
 /* Header */
-.header { background: #1a1a2e; color: #fff; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; z-index: 10; }
+.header { background: #1a1a2e; color: #fff; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; z-index: 10; flex-shrink: 0; }
 .header h1 { font-size: 18px; font-weight: 600; }
 .header .subtitle { font-size: 13px; color: #a0a0b8; margin-top: 2px; }
 .header-controls { display: flex; gap: 8px; align-items: center; }
@@ -19,7 +20,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f5f5f5; c
 .btn-method { padding: 6px 14px; border: 1px solid #ddd; background: #fff; color: #333; border-radius: 6px; cursor: pointer; font-size: 12px; }
 
 /* Layout */
-.main { display: flex; height: calc(100vh - 52px); }
+.main { display: flex; flex: 1; min-height: 0; }
 .sidebar { width: 240px; background: #fff; border-right: 1px solid #e0e0e0; padding: 16px; overflow-y: auto; flex-shrink: 0; }
 .sidebar h3 { font-size: 13px; font-weight: 600; text-transform: uppercase; color: #666; margin-bottom: 8px; letter-spacing: 0.5px; }
 .sidebar label { display: flex; align-items: center; gap: 6px; font-size: 13px; padding: 3px 0; cursor: pointer; }
